@@ -1,0 +1,47 @@
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    outline: 1px solid #F80701;
+
+    .Dashboard__Stat-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 48px;
+
+        .Dashboard__Stat {
+            outline: 1px solid #F80701;
+        }
+
+        .Dashboard__Stat p {
+            font-size: 18px;
+        }
+    }
+
+    .Toggle {
+        display: flex;
+        justify-content: center;
+        
+        .Toggle__Button {
+            width: 100px;
+        }
+    }
+
+    
+
+    .Dashboard__options-container {
+        display: flex;
+        justify-content: center;
+
+        .Dashboard__Options {
+            height: 24px;
+        }
+
+        .Dashboard__Options__Flag {
+            height: 24px;
+        }
+    }
+}
+

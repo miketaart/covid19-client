@@ -14,6 +14,51 @@
   justify-content: space-around;
 }
 
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  outline: 1px solid #F80701;
+}
+
+.Dashboard .Dashboard__Stat-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 48px;
+}
+
+.Dashboard .Dashboard__Stat-container .Dashboard__Stat {
+  outline: 1px solid #F80701;
+}
+
+.Dashboard .Dashboard__Stat-container .Dashboard__Stat p {
+  font-size: 18px;
+}
+
+.Dashboard .Toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.Dashboard .Toggle .Toggle__Button {
+  width: 100px;
+}
+
+.Dashboard .Dashboard__options-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Dashboard .Dashboard__options-container .Dashboard__Options {
+  height: 24px;
+}
+
+.Dashboard .Dashboard__options-container .Dashboard__Options__Flag {
+  height: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
