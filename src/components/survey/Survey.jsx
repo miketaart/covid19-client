@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 
 export default class Survey extends Component {
     constructor(props) {
@@ -30,6 +30,23 @@ export default class Survey extends Component {
 
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value })
+    }
+
+    handleSubmit = () => {
+        let response = {
+            user: {
+                nickName: this.state.nickName,
+                email: this.state.email,
+                gender: this.state.gender,
+            },
+            dateSymptomsAppeared: this.state.dateSymptomsAppeared,
+            symptoms: this.state.symptoms,
+            message: this.state.message,
+            date: new Date().toLocaleDateString('en-GB', { timeZone: 'Europe/Amsterdam' }),
+            timeStamp: new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/Amsterdam' }),
+        }
+
+        axios.post("http://localhost:5000/data", response)
     }
 
     render() {
@@ -102,7 +119,7 @@ export default class Survey extends Component {
                             onChange={this.handleChange}
                         />
                     </p>
-                    <button className="Survey__Form-button" >Post your experience</button>
+                    <button className="Survey__Form-button" onClick={this.handleSubmit}>Post your experience</button>
                 </form>
             </div>
         )
