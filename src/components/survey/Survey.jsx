@@ -30,6 +30,7 @@ export default class Survey extends Component {
 
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value })
+        console.log(this.state)
     }
 
     handleSubmit = () => {
@@ -42,8 +43,8 @@ export default class Survey extends Component {
             dateSymptomsAppeared: this.state.dateSymptomsAppeared,
             symptoms: this.state.symptoms,
             message: this.state.message,
-            date: new Date().toLocaleDateString('en-GB', { timeZone: 'Europe/Amsterdam' }),
-            timeStamp: new Date().toLocaleTimeString('en-GB', { timeZone: 'Europe/Amsterdam' }),
+            date: new Date().toLocaleDateString('nl-NL', { timeZone: 'Europe/Amsterdam' }),
+            timeStamp: new Date().toLocaleTimeString('nl-NL', { timeZone: 'Europe/Amsterdam' })
         }
 
         axios.post("http://localhost:5000/data", response)
@@ -59,18 +60,20 @@ export default class Survey extends Component {
                 <form className="Survey__Form">
                     <p>
                         <label>
-                            How do people call you?
+                            Your name
                         </label>
                         <input
                             placeholder="SillyDragon123"
+                            name="nickName"
                             value={this.state.nickName}
                             onChange={this.handleChange}
                         />
                     </p>
                     <p>
-                        <label htmlFor="">What's your gender?</label>
+                        <label htmlFor="">Your gender</label>
                         <input
                             type="radio"
+                            name="gender"
                             value='male'
                             onChange={this.handleChange}
                         />
@@ -78,6 +81,7 @@ export default class Survey extends Component {
 
                         <input
                             type="radio"
+                            name="gender"
                             value='female'
                             onChange={this.handleChange}
                         />
@@ -85,26 +89,28 @@ export default class Survey extends Component {
                     </p>
                     <p>
                         <label>
-                            When did the symptoms appear?
+                            First time symptoms appeared
                         </label>
                         <input
                             type="date"
+                            name="dateSymptomsAppeared"
                             value={this.state.dateSymptomsAppeared}
                             onChange={this.handleChange}
                         />
                     </p>
 
                     <p>
-                        <label>What are your symptoms?</label>
+                        <label>Check your symptoms</label>
                     </p>
 
                     <p>
                         <label>
-                            Your email?
+                            Email
                         </label>
                         <input
                             type="email"
                             placeholder="Email"
+                            name="email"
                             value={this.state.email}
                             onChange={this.handleChange}
                         />
@@ -114,7 +120,8 @@ export default class Survey extends Component {
                             Describe your experience
                         </label>
                         <input
-                            placeholder="Your message"
+                            placeholder="Your experience"
+                            name="message"
                             value={this.state.message}
                             onChange={this.handleChange}
                         />
