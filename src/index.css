@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 25vh;
   outline: 1px solid #F80701;
 }
 
@@ -57,6 +57,31 @@
 
 .Dashboard .Dashboard__options-container .Dashboard__Options__Flag {
   height: 24px;
+}
+
+.Survey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Survey .Survey__Form p label {
+  display: inline-block;
+  width: 200px;
+}
+
+.Survey .Survey__Form__Gender-label {
+  width: 50px !important;
+}
+
+.Survey .Survey__Form__List {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.Survey .CheckBox {
+  list-style: none;
 }
 
 * {

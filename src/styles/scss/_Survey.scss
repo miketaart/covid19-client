@@ -1,0 +1,25 @@
+.Survey {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+
+    .Survey__Form p label {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .Survey__Form__Gender-label {
+        width: 50px !important;
+    }
+
+    .Survey__Form__List {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    .CheckBox {
+        list-style: none;
+    }
+}

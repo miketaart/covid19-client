@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
+    height: 25vh;
     outline: 1px solid #F80701;
 
     .Dashboard__Stat-container {
@@ -23,13 +23,13 @@
     .Toggle {
         display: flex;
         justify-content: center;
-        
+
         .Toggle__Button {
             width: 100px;
         }
     }
 
-    
+
 
     .Dashboard__options-container {
         display: flex;
@@ -44,4 +44,3 @@
         }
     }
 }
-
