@@ -3,16 +3,17 @@
     {
       "user": {
         "nickName": "",
-        "email": ""
+        "email": "",
+        "gender": ""
       },
       "dateSymptomsAppeared": "",
       "symptoms": [
         {
-          "value": "cough",
+          "value": "Cough",
           "isChecked": false
         },
         {
-          "value": "fever",
+          "value": "High temperature",
           "isChecked": false
         },
         {
@@ -20,12 +21,29 @@
           "isChecked": false
         },
         {
-          "value": "musclepain",
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": false
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": false
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": false
+        },
+        {
+          "value": "I have no symptoms",
           "isChecked": false
         }
       ],
+      "message": "yo",
       "date": "23-10-2020",
-      "timeStamp": "16:05:40",
+      "timeStamp": "16:32:04",
       "id": 1
     }
   ]

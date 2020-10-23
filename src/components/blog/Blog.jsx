@@ -7,6 +7,7 @@ export default class Blog extends Component {
 
         this.state = {
             posts: [],
+            search: ''
         }
     }
 
@@ -25,14 +26,25 @@ export default class Blog extends Component {
             })
     }
 
+    updateSearch = (e) => {
+        this.setState({
+            search: e.target.value
+        })
+    }
+
     componentDidMount() {
         this.getAllPosts()
     }
 
     render() {
+        let search = this.state.search.toLowerCase()
         return (
             <div className="Blog">
+                <input className="input" type="text" placeholder="Filter by symptoms" value={this.state.search} onChange={this.updateSearch} />
                 {this.state.posts
+                    .filter((post) =>
+                        post.message.toLowerCase()
+                            .includes(search))
                     .map(post => (
                         <div className="Blog__Post-Container" key={post.id}>
                             <p className="Blog__Post">{post.timeStamp} {post.dateSymptomsAppeared.split('-').reverse().join('-')}</p>
