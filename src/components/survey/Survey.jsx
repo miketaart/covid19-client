@@ -8,20 +8,28 @@ export default class Survey extends Component {
         this.state = {
             nickName: '',
             email: '',
-            sex: '',
+            gender: '',
             dateSymptomsAppeared: '',
-            q1: '',
-            q2: '',
             symptoms: [
-                { value: "cough", isChecked: false },
-                { value: "fever", isChecked: false },
+                { value: "Cough", isChecked: false },
+                { value: "Fever or high temperature", isChecked: false },
                 { value: "headache", isChecked: false },
-                { value: "musclepain", isChecked: false }
+                { value: "Sore throat", isChecked: false },
+                { value: "Shortness of breath", isChecked: false },
+                { value: "Severe muscle pain", isChecked: false },
+                { value: "Suddenly harder to smell", isChecked: false },
+                { value: "Suddenly harder to taste", isChecked: false },
+                { value: "I have no symptoms", isChecked: false },
             ],
+            message: '',
             date: '',
-            comment: '',
             timeStamp: '',
+
         }
+    }
+
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value })
     }
 
     render() {
@@ -32,52 +40,69 @@ export default class Survey extends Component {
                 </div>
 
                 <form className="Survey__Form">
-                    <label>
+                    <p>
+                        <label>
+                            How do people call you?
+                        </label>
                         <input
-                            placeholder="Add first name"
+                            placeholder="SillyDragon123"
+                            value={this.state.nickName}
+                            onChange={this.handleChange}
                         />
-                    </label>
-                    <label>
-                        <input
-                            placeholder="Date of birth"
-                            type="date"
-                        />
-                    </label>
-                    <div>
+                    </p>
+                    <p>
+                        <label htmlFor="">What's your gender?</label>
                         <input
                             type="radio"
                             value='male'
+                            onChange={this.handleChange}
                         />
-                        <label htmlFor="sex">male</label>
+                        <label htmlFor="gender">male</label>
+
                         <input
                             type="radio"
                             value='female'
+                            onChange={this.handleChange}
                         />
-                        <label htmlFor="sex">female</label>
-                    </div>
-                    <label>
+                        <label htmlFor="gender">female</label>
+                    </p>
+                    <p>
+                        <label>
+                            When did the symptoms appear?
+                        </label>
                         <input
-                        type="email"
-                            placeholder="Email"
+                            type="date"
+                            value={this.state.dateSymptomsAppeared}
+                            onChange={this.handleChange}
                         />
-                    </label>
-                    <label>
-                        <input
-                            placeholder="q1"
-                        />
-                    </label>
-                    <label>
-                        <input
-                            placeholder="q2"
-                        />
-                    </label>
-                    <label>
-                        <input
-                            placeholder="comment"
-                        />
-                    </label>
+                    </p>
 
-                    <button className="formButton" >Add experience</button>
+                    <p>
+                        <label>What are your symptoms?</label>
+                    </p>
+
+                    <p>
+                        <label>
+                            Your email?
+                        </label>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            value={this.state.email}
+                            onChange={this.handleChange}
+                        />
+                    </p>
+                    <p>
+                        <label>
+                            Describe your experience
+                        </label>
+                        <input
+                            placeholder="Your message"
+                            value={this.state.message}
+                            onChange={this.handleChange}
+                        />
+                    </p>
+                    <button className="Survey__Form-button" >Post your experience</button>
                 </form>
             </div>
         )
