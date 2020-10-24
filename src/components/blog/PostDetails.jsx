@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 class PostDetails extends Component {
     constructor(props) {
@@ -22,32 +22,49 @@ class PostDetails extends Component {
             .then(response => {
                 this.setState({
                     details: response.data,
+                    title: response.data.title,
                     name: response.data.user.nickName,
                     gender: response.data.user.gender,
-                    dateSymptomsAppeared: response.data.dateSymptomsAppeared,
+                    dateSymptomsAppeared: response.data.dateSymptomsAppeared.split('-').reverse().join('-'),
                     symptomsList: response.data.symptoms,
                     message: response.data.message
-                }, () => { console.log(this.state.symptomsList) })
+                }, () => { console.log(this.state.gender) })
             })
-            .catch(error => error)
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+
+    deletePost = () => {
+        let postId = this.props.match.params.id;
+        axios.delete(`http://localhost:5000/data/${postId}`)
+            .then(response => {
+                this.props.history.push('/')
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 
     componentDidMount() {
+        console.log(this.props)
         this.getSinglePost()
     }
     render() {
         return (
             <div className="">
-                <h2 className=""> {this.state.details.title} </h2>
-                <p>{this.state.gender}</p>
-                <p>Symptoms appeared on {this.state.dateSymptomsAppeared.split('-').reverse().join('-')}</p>
-                <p> {this.state.message}</p>
-                <p> By {this.state.name} on {this.state.details.date}</p>
+                <article>
+                    <h2 className="Post__title"> {this.state.title}</h2>
+                    <p className="Post__user">A {this.state.gender} named {this.state.name} started feeling symptoms on {this.state.dateSymptomsAppeared}</p>
+                    <p className="Post__message"> {this.state.message}</p>
+                </article>
+
                 <Link to="/">Back</Link>
                 <Link to={`/posts/edit/${this.props.match.params.id}`}>Edit</Link>
+                <button onClick={this.deletePost}>Delete post</button>
             </div>
         );
     }
 }
 
-export default PostDetails;
+export default withRouter(PostDetails);

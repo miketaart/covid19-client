@@ -7,9 +7,7 @@
 //             symptom: props.symptom
 //         }
 //     }
-//     componentDidMount() {
-//         console.log(this.state.symptom)
-//     }
+
 //     render() {
 //         return (
 //             <li> {this.state.symptom.value}</li>

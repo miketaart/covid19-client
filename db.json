@@ -2,6 +2,335 @@
   "data": [
     {
       "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 1
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 2
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 4
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 5
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 6
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 7
+    },
+    {
+      "user": {
+        "nickName": "Guy544",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "This is a title",
+      "message": "This is my experience",
+      "date": "24-10-2020",
+      "timeStamp": "18:22:48",
+      "id": 8
+    },
+    {
+      "user": {
         "nickName": "Laalaaaa",
         "email": "h.michael.ta@gmail.com",
         "gender": "female"
@@ -30,7 +359,7 @@
         },
         {
           "value": "Severe muscle pain",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Harder to smell or taste",
@@ -41,19 +370,19 @@
           "isChecked": false
         }
       ],
-      "title": "This is title 1",
-      "message": "My experience  was very bad. It sucked so hard...",
+      "title": "hallo dit is een test, max aan",
+      "message": "fffd",
       "date": "24-10-2020",
-      "timeStamp": "15:15:55",
-      "id": 1
+      "timeStamp": "18:26:12",
+      "id": 9
     },
     {
       "user": {
         "nickName": "Bawling",
-        "email": "",
-        "gender": ""
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
       },
-      "dateSymptomsAppeared": "",
+      "dateSymptomsAppeared": "2020-10-12",
       "symptoms": [
         {
           "value": "Cough",
@@ -73,34 +402,34 @@
         },
         {
           "value": "Shortness of breath",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Severe muscle pain",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Harder to smell or taste",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "I have no symptoms",
-          "isChecked": false
+          "isChecked": true
         }
       ],
-      "title": "",
-      "message": "",
+      "title": "practice classes",
+      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
       "date": "24-10-2020",
-      "timeStamp": "16:33:22",
-      "id": 2
+      "timeStamp": "18:27:09",
+      "id": 10
     },
     {
       "user": {
         "nickName": "Laalaaaa",
-        "email": "",
+        "email": "h.michael.ta@gmail.com",
         "gender": "female"
       },
-      "dateSymptomsAppeared": "",
+      "dateSymptomsAppeared": "2020-10-21",
       "symptoms": [
         {
           "value": "Cough",
@@ -120,34 +449,34 @@
         },
         {
           "value": "Shortness of breath",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Severe muscle pain",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Harder to smell or taste",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "I have no symptoms",
           "isChecked": false
         }
       ],
-      "title": "",
-      "message": "",
+      "title": "hallo dit is een test, max aan",
+      "message": "fffd",
       "date": "24-10-2020",
-      "timeStamp": "16:33:46",
-      "id": 3
+      "timeStamp": "18:26:12",
+      "id": 11
     },
     {
       "user": {
-        "nickName": "",
-        "email": "",
-        "gender": ""
+        "nickName": "Bawling",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
       },
-      "dateSymptomsAppeared": "",
+      "dateSymptomsAppeared": "2020-10-12",
       "symptoms": [
         {
           "value": "Cough",
@@ -167,26 +496,120 @@
         },
         {
           "value": "Shortness of breath",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Severe muscle pain",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "practice classes",
+      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
+      "date": "24-10-2020",
+      "timeStamp": "18:27:09",
+      "id": 12
+    },
+    {
+      "user": {
+        "nickName": "Laalaaaa",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-21",
+      "symptoms": [
+        {
+          "value": "Cough",
           "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
         },
         {
           "value": "I have no symptoms",
           "isChecked": false
         }
       ],
-      "title": "",
-      "message": "",
+      "title": "hallo dit is een test, max aan",
+      "message": "fffd",
       "date": "24-10-2020",
-      "timeStamp": "16:34:02",
-      "id": 4
+      "timeStamp": "18:26:12",
+      "id": 13
+    },
+    {
+      "user": {
+        "nickName": "Bawling",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "2020-10-12",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "practice classes",
+      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
+      "date": "24-10-2020",
+      "timeStamp": "18:27:09",
+      "id": 14
     }
   ]
 }
