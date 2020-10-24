@@ -3,19 +3,16 @@
     flex-direction: column;
     justify-content: center;
     height: 25vh;
-    outline: 1px solid #F80701;
 
     .Dashboard__Stat-container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         font-size: 48px;
-
-        .Dashboard__Stat {
-            outline: 1px solid #F80701;
-        }
+        color: #F80701;
 
         .Dashboard__Stat p {
+            color: #444;
             font-size: 18px;
         }
     }
