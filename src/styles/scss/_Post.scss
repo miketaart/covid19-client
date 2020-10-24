@@ -1,0 +1,67 @@
+.Post {
+    background: #FFF;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(#000, 0.2);
+    width: 20vw;
+    height: 13vh;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 2px 4px rgba(#000, 0.2),
+            0 4px 8px rgba(#000, 0.2);
+    }
+
+    .Post__category {
+        background-color: #F80701;
+        display: inline-block;
+        padding: 8px 10px;
+        margin: 0 0 10px;
+        color: #FFF;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+    }
+
+    &:active {
+        box-shadow: none;
+        transform-origin: center;
+        transform: scale(0.98);
+    }
+
+    &__category {
+        display: inline-block;
+        padding: 8px 10px;
+        margin: 0 0 10px;
+        color: #FFF;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+    }
+
+    &__message {
+        color: #666;
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    &__title {
+        margin: 0 0 10px;
+        color: #444;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        overflow: hidden;
+    }
+
+    &__user {
+        color: #666;
+        font-size: 0.7rem;
+        line-height: 1.75rem;
+        text-decoration: none;
+    }
+}

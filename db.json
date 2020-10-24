@@ -46,6 +46,147 @@
       "date": "24-10-2020",
       "timeStamp": "15:15:55",
       "id": 1
+    },
+    {
+      "user": {
+        "nickName": "Bawling",
+        "email": "",
+        "gender": ""
+      },
+      "dateSymptomsAppeared": "",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": false
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": false
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": false
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": false
+        }
+      ],
+      "title": "",
+      "message": "",
+      "date": "24-10-2020",
+      "timeStamp": "16:33:22",
+      "id": 2
+    },
+    {
+      "user": {
+        "nickName": "Laalaaaa",
+        "email": "",
+        "gender": "female"
+      },
+      "dateSymptomsAppeared": "",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": false
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": false
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": false
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": false
+        }
+      ],
+      "title": "",
+      "message": "",
+      "date": "24-10-2020",
+      "timeStamp": "16:33:46",
+      "id": 3
+    },
+    {
+      "user": {
+        "nickName": "",
+        "email": "",
+        "gender": ""
+      },
+      "dateSymptomsAppeared": "",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": false
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": false
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": false
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": false
+        }
+      ],
+      "title": "",
+      "message": "",
+      "date": "24-10-2020",
+      "timeStamp": "16:34:02",
+      "id": 4
     }
   ]
 }

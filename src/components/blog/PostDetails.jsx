@@ -38,7 +38,7 @@ class PostDetails extends Component {
     render() {
         return (
             <div className="">
-                <h1 className=""> {this.state.details.title} </h1>
+                <h2 className=""> {this.state.details.title} </h2>
                 <p>{this.state.gender}</p>
                 <p>Symptoms appeared on {this.state.dateSymptomsAppeared.split('-').reverse().join('-')}</p>
                 <p> {this.state.message}</p>

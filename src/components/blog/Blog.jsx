@@ -41,9 +41,9 @@ export default class Blog extends Component {
         let search = this.state.search.toLowerCase()
 
         return (
-            <div className="Blog">
+            <div className="Blog-Container">
                 <input className="input" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
-                <ul>
+                <div className="Blog">
                     {this.state.posts
                         .filter((post) =>
                             post.message.toLowerCase()
@@ -51,7 +51,7 @@ export default class Blog extends Component {
                         .map(post => (
                             <Post key={post.id} post={post} />
                         ))}
-                </ul>
+                </div>
             </div>
         )
     }

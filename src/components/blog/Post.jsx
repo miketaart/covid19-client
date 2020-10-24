@@ -8,16 +8,17 @@ class Post extends Component {
             post: props.post
         }
     }
-    componentDidMount() {
-        console.log(this.state.post)
-    }
+
     render() {
         return (
-            <li className="Blog__Post-Container" key={this.state.post.id}>
-                <Link className="Blog__Post-link" to={`/posts/${this.state.post.id}`}> {this.state.post.title} </Link>
-                <p> {this.state.post.message}</p>
-                <p> By {this.state.post.user.nickName} on {this.state.post.date}</p>
-            </li>
+            <Link style={{ textDecoration: 'none' }} to={`/posts/${this.state.post.id}`}>
+                <article className="Post" key={this.state.post.id}>
+                    <h3 className="Post__category">Experience</h3>
+                    <h2 className="Post__title">{this.state.post.title}</h2>
+                    <p className="Post__message"> {this.state.post.message.replace(/^(.{80}[^\s]*).*/, "$1") + '...'}</p>
+                    <p className="Post__user"> By {this.state.post.user.nickName} on {this.state.post.date}</p>
+                </article>
+            </Link>
         );
     }
 }
