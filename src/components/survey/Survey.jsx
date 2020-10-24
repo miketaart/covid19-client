@@ -58,7 +58,7 @@ class Survey extends Component {
 
         axios.post("http://localhost:5000/data", response)
         sessionStorage.clear("autoSave")
-        this.props.history.push('/blog')
+        this.props.history.push('/')
     }
 
     componentDidMount() {
@@ -194,7 +194,7 @@ class Survey extends Component {
                         <label>
                             Describe your experience
                         </label>
-                        <input
+                        <textarea
                             placeholder="Your experience"
                             name="message"
                             value={this.state.message}

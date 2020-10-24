@@ -563,6 +563,100 @@
       "date": "23-10-2020",
       "timeStamp": "23:36:06",
       "id": 17
+    },
+    {
+      "user": {
+        "nickName": "this is a test",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "male"
+      },
+      "dateSymptomsAppeared": "2020-10-14",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": true
+        },
+        {
+          "value": "High temperature",
+          "isChecked": true
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": false
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": false
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": false
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": false
+        }
+      ],
+      "title": "hallo dit is een test, max aan",
+      "message": "Trump",
+      "date": "24-10-2020",
+      "timeStamp": "11:15:53",
+      "id": 18
+    },
+    {
+      "user": {
+        "nickName": "SillyDragon ",
+        "email": "h.michael.ta@gmail.com",
+        "gender": "male"
+      },
+      "dateSymptomsAppeared": "2020-10-19",
+      "symptoms": [
+        {
+          "value": "Cough",
+          "isChecked": false
+        },
+        {
+          "value": "High temperature",
+          "isChecked": false
+        },
+        {
+          "value": "headache",
+          "isChecked": false
+        },
+        {
+          "value": "Sore throat",
+          "isChecked": false
+        },
+        {
+          "value": "Shortness of breath",
+          "isChecked": true
+        },
+        {
+          "value": "Severe muscle pain",
+          "isChecked": true
+        },
+        {
+          "value": "Harder to smell or taste",
+          "isChecked": true
+        },
+        {
+          "value": "I have no symptoms",
+          "isChecked": true
+        }
+      ],
+      "title": "Biden",
+      "message": "yo",
+      "date": "24-10-2020",
+      "timeStamp": "11:17:31",
+      "id": 19
     }
   ]
 }

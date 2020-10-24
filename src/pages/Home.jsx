@@ -1,14 +1,16 @@
 import React from 'react';
-//import Navbar from '../components/navbar/Navbar';
-
-import Survey from '../components/survey/Survey';
-// import Footer from '../components/footer/Footer';
+import { Switch, Route } from 'react-router-dom';
+import EditPost from "../components/survey/EditPost";
+import Survey from "../components/survey/Survey";
+import Blog from "../components/blog/Blog";
 
 const Home = () => {
     return (
-        <div className="Home">
-            <Survey />
-        </div>
+        <Switch>
+            <Route exact path="/" component={Blog} />
+            <Route exact path="/survey" component={Survey} />
+            <Route exact path="/editpost" component={EditPost} />
+        </Switch>
     );
 }
 

@@ -84,6 +84,11 @@
   list-style: none;
 }
 
+.Blog__Post-Container {
+  display: flex;
+  margin-bottom: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
