@@ -1,10 +1,11 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
+  background-color: #F5E0CD;
 }
 
 .Navbar .Navbar__title {
-  color: #F80701;
+  color: #CD4841;
 }
 
 .Navbar .Navbar__TimeDate-container {
@@ -26,7 +27,8 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 48px;
-  color: #F80701;
+  color: #CD4841;
+  background-color: #F5E0CD;
 }
 
 .Dashboard .Dashboard__Stat-container .Dashboard__Stat p {
@@ -60,6 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F5E0CD;
 }
 
 .Survey .Survey__Form p label {
@@ -81,6 +84,27 @@
   list-style: none;
 }
 
+.Blog-Container .Blog__Edits-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__search {
+  border: 1 solid black;
+  margin: 0 10px;
+  padding: 4px;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__Sort-button {
+  border: 1 solid black;
+  margin: 0 10px;
+  padding: 4px;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__Sort-button .Blog__Add-link {
+  text-decoration: none;
+}
+
 .Blog-Container .Blog {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +114,7 @@
 }
 
 .Post {
-  background: #FFF;
+  background-color: #FFF;
   margin: 1vw;
   padding: 20px;
   border-radius: 2px;
@@ -106,7 +130,7 @@
 }
 
 .Post .Post__category {
-  background-color: #F80701;
+  background-color: #CD4841;
   display: inline-block;
   padding: 8px 10px;
   margin: 0 0 10px;
@@ -135,12 +159,14 @@
 }
 
 .Post__message {
+  background-color: #FFF;
   color: #666;
   line-height: 1.5rem;
   font-size: 0.875rem;
 }
 
 .Post__title {
+  background-color: #FFF;
   margin: 0 0 10px;
   color: #444;
   font-size: 1.25rem;
@@ -150,6 +176,7 @@
 }
 
 .Post__user {
+  background-color: #FFF;
   color: #666;
   font-size: 0.7rem;
   line-height: 1.75rem;
@@ -160,6 +187,7 @@
   margin: 0;
   padding: 0;
   font-family: roboto;
+  background-color: #F5E0CD;
 }
 
 .Home {

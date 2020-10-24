@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Post from './Post';
-//import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class Blog extends Component {
     constructor(props) {
@@ -66,9 +66,15 @@ export default class Blog extends Component {
 
         return (
             <div className="Blog-Container">
-                <input className="input" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
-                <button onClick={this.sortByLatest} className="sort-button">Sort by latest</button>
-                <button onClick={this.sortByEarliest} className="sort-button sort-button-active">Sort by earliest</button>
+                <div className="Blog__Edits-Container">
+                    <button className="Blog__Sort-button">
+                        <Link className="Blog__Add-link" to="/posts/survey">Share your experience</Link>
+                    </button>
+                    <input className="Blog__search" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
+                    <button onClick={this.sortByLatest} className="Blog__Sort-button">Sort by latest</button>
+                    <button onClick={this.sortByEarliest} className="Blog__Sort-button">Sort by earliest</button>
+                </div>
+
                 <div className="Blog">
                     {this.state.posts
                         .filter((post) =>

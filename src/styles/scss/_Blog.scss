@@ -1,4 +1,26 @@
 .Blog-Container {
+    .Blog__Edits-Container {
+        display: flex;
+        justify-content: center;
+
+        .Blog__search {
+            border: 1 solid black;
+            margin: 0 10px;
+            padding: 4px;
+        }
+
+        .Blog__Sort-button {
+            border: 1 solid black;
+            margin: 0 10px;
+            padding: 4px;
+
+            .Blog__Add-link {
+                text-decoration: none;
+            }
+        }
+
+    }
+
     .Blog {
         display: flex;
         flex-wrap: wrap;
