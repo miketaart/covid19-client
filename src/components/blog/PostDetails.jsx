@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-//import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class PostDetails extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            title: '',
             details: '',
             name: '',
-            gender: ''
+            gender: '',
+            symptomsList: '',
+            dateSymptomsAppeared: '',
+            message: ''
         }
     }
 
@@ -19,8 +23,11 @@ class PostDetails extends Component {
                 this.setState({
                     details: response.data,
                     name: response.data.user.nickName,
-                    gender: response.data.user.gender
-                }, () => { console.log(this.state) })
+                    gender: response.data.user.gender,
+                    dateSymptomsAppeared: response.data.dateSymptomsAppeared,
+                    symptomsList: response.data.symptoms,
+                    message: response.data.message
+                }, () => { console.log(this.state.symptomsList) })
             })
             .catch(error => error)
     }
@@ -31,12 +38,13 @@ class PostDetails extends Component {
     render() {
         return (
             <div className="">
-                <h1 className=""> {this.state.title} </h1>
-                <p>Symptoms</p>
-                <h2>{this.state.gender}</h2>
-                <h3>Date Symptoms appeared: {this.state.details.dateSymptomsAppeared}</h3>
+                <h1 className=""> {this.state.details.title} </h1>
+                <p>{this.state.gender}</p>
+                <p>Symptoms appeared on {this.state.dateSymptomsAppeared.split('-').reverse().join('-')}</p>
                 <p> {this.state.message}</p>
                 <p> By {this.state.name} on {this.state.details.date}</p>
+                <Link to="/">Back</Link>
+                <Link to={`/posts/edit/${this.props.match.params.id}`}>Edit</Link>
             </div>
         );
     }

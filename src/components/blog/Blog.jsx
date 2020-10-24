@@ -20,7 +20,7 @@ export default class Blog extends Component {
                 console.log(response.data)
                 this.setState({
                     posts: response.data,
-                })
+                }, () => { console.log(this.state.posts) })
             })
             .catch((error) => {
                 console.log(error);

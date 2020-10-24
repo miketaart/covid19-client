@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class EditPost extends Component {
   constructor(props) {
@@ -24,12 +24,13 @@ class EditPost extends Component {
       message: '',
       date: '',
       timeStamp: '',
-      id: '6'
+      id: ''
     }
   }
 
   getPostDetails = () => {
-    axios.get(`http://localhost:5000/data/${this.state.id}`)
+    let postId = this.props.match.params.id;
+    axios.get(`http://localhost:5000/data/${postId}`)
       .then(response => {
         this.setState({
           nickName: response.data.user.nickName,
@@ -41,6 +42,7 @@ class EditPost extends Component {
           message: response.data.message,
           date: response.data.date,
           timeStamp: response.data.timeStamp,
+          id: response.data.id
         });
       })
       .catch(err => console.log(err));
@@ -61,12 +63,10 @@ class EditPost extends Component {
       timeStamp: this.state.timeStamp
     }
 
-    axios.request({
-      method: 'put',
-      url: `http://localhost:5000/data/${this.state.id}`,
-      data: response
-    })
-    this.props.history.push('/blog')
+    axios.put(`http://localhost:5000/data/${this.state.id}`, response)
+      .then(response => {
+        this.props.history.push(`/posts/${this.state.id}`)
+      })
   }
 
   handleChange = (e) => {
@@ -83,7 +83,7 @@ class EditPost extends Component {
         <form>
           <p>
             <input
-              placeholder="Enter a descriptive title"
+              placeholder="Edit title"
               name="title"
               value={this.state.title}
               onChange={this.handleChange}
@@ -92,13 +92,14 @@ class EditPost extends Component {
           </p>
           <p>
             <input
-              placeholder="Your experience"
+              placeholder="Edit message"
               name="message"
               value={this.state.message}
               onChange={this.handleChange}
               required="required"
             />
           </p>
+          <Link to={`/posts/${this.props.match.params.id}`}>Back</Link>
           <button className="Survey__Form-button" onClick={this.handleSubmit}>Edit</button>
         </form>
       </div>
