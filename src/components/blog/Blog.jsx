@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import EditPost from '../survey/EditPost'
 
 export default class Blog extends Component {
     constructor(props) {
@@ -7,7 +8,8 @@ export default class Blog extends Component {
 
         this.state = {
             posts: [],
-            search: ''
+            search: '',
+            show: false
         }
     }
 
@@ -36,21 +38,48 @@ export default class Blog extends Component {
         this.getAllPosts()
     }
 
+    showEditor = () => {
+        this.setState({
+            show: !this.state.show
+        })
+    }
+
     render() {
         let search = this.state.search.toLowerCase()
-        return (
-            <div className="Blog">
-                <input className="input" type="text" placeholder="Filter by symptoms" value={this.state.search} onChange={this.updateSearch} />
-                {this.state.posts
-                    .filter((post) =>
-                        post.message.toLowerCase()
-                            .includes(search))
-                    .map(post => (
-                        <div className="Blog__Post-Container" key={post.id}>
-                            <p className="Blog__Post">{post.timeStamp} {post.dateSymptomsAppeared.split('-').reverse().join('-')}</p>
-                        </div>
-                    ))}
-            </div>
-        )
+        const edit = this.state.show
+        if (!edit) {
+            return (
+                <div className="Blog">
+                    <input className="input" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
+                    {this.state.posts
+                        .filter((post) =>
+                            post.message.toLowerCase()
+                                .includes(search))
+                        .map(post => (
+                            <div className="Blog__Post-Container" key={post.id}>
+                                <p className="Blog__Post__Message"> {post.title}</p>
+                                <p className="Blog__Post__Message"> {post.message}</p>
+                                <p className="Blog__Post__Message"> By {post.user.nickName} on {post.date}</p>
+                                <button onClick={this.showEditor}>Edit</button>
+                            </div>
+                        ))}
+                </div>
+            )
+        } else {
+            return (
+                <div className="Blog">
+                    {this.state.posts
+                        .filter((post) =>
+                            post.message.toLowerCase()
+                                .includes(search))
+                        .map(post => (
+                            <div className="Blog__Post-Container" key={post.id}>
+                                <EditPost />
+                            </div>
+                        ))}
+                </div>
+            )
+        }
+
     }
 }

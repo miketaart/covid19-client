@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import CheckBox from './CheckBox';
+import { withRouter } from 'react-router-dom';
 
-export default class Survey extends Component {
+class Survey extends Component {
     autoSave;
     constructor(props) {
         super(props)
@@ -21,10 +22,10 @@ export default class Survey extends Component {
                 { value: "Harder to smell or taste", isChecked: false },
                 { value: "I have no symptoms", isChecked: false },
             ],
+            title: '',
             message: '',
             date: '',
             timeStamp: '',
-
         }
     }
 
@@ -49,6 +50,7 @@ export default class Survey extends Component {
             },
             dateSymptomsAppeared: this.state.dateSymptomsAppeared,
             symptoms: this.state.symptoms,
+            title: this.state.title,
             message: this.state.message,
             date: new Date().toLocaleDateString('nl-NL', { timeZone: 'Europe/Amsterdam' }),
             timeStamp: new Date().toLocaleTimeString('nl-NL', { timeZone: 'Europe/Amsterdam' })
@@ -56,9 +58,11 @@ export default class Survey extends Component {
 
         axios.post("http://localhost:5000/data", response)
         sessionStorage.clear("autoSave")
+        this.props.history.push('/blog')
     }
 
     componentDidMount() {
+        console.log(this.props)
         this.autoSave = JSON.parse(sessionStorage.getItem('autoSave'));
         if (sessionStorage.getItem('autoSave')) {
             this.setState({
@@ -67,6 +71,7 @@ export default class Survey extends Component {
                 gender: this.autoSave.gender,
                 dateSymptomsAppeared: this.autoSave.dateSymptomsAppeared,
                 symptoms: this.autoSave.symptoms,
+                title: this.autoSave.title,
                 message: this.autoSave.message
             })
         } else {
@@ -85,6 +90,7 @@ export default class Survey extends Component {
                     { value: "Harder to smell or taste", isChecked: false },
                     { value: "I have no symptoms", isChecked: false },
                 ],
+                title: '',
                 message: ''
             })
         }
@@ -111,6 +117,7 @@ export default class Survey extends Component {
                             name="nickName"
                             value={this.state.nickName}
                             onChange={this.handleChange}
+                            required="required"
                         />
                     </p>
                     <p>
@@ -121,6 +128,7 @@ export default class Survey extends Component {
                             value='male'
                             onChange={this.handleChange}
                             checked={this.state.gender === 'male'}
+
                         />
                         <label className="Survey__Form__Gender-label" htmlFor="gender">male</label>
 
@@ -142,6 +150,7 @@ export default class Survey extends Component {
                             name="dateSymptomsAppeared"
                             value={this.state.dateSymptomsAppeared}
                             onChange={this.handleChange}
+                            required="required"
                         />
                     </p>
 
@@ -166,6 +175,19 @@ export default class Survey extends Component {
                             name="email"
                             value={this.state.email}
                             onChange={this.handleChange}
+                            required="required"
+                        />
+                    </p>
+                    <p>
+                        <label>
+                            Title of your post
+                        </label>
+                        <input
+                            placeholder="Enter a descriptive title"
+                            name="title"
+                            value={this.state.title}
+                            onChange={this.handleChange}
+                            required="required"
                         />
                     </p>
                     <p>
@@ -177,6 +199,7 @@ export default class Survey extends Component {
                             name="message"
                             value={this.state.message}
                             onChange={this.handleChange}
+                            required="required"
                         />
                     </p>
                     <button className="Survey__Form-button" onClick={this.handleSubmit}>Post your experience</button>
@@ -185,3 +208,5 @@ export default class Survey extends Component {
         )
     }
 }
+
+export default withRouter(Survey);
