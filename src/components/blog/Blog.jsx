@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import Post from './Post';
 //import { Link } from 'react-router-dom'
 
 export default class Blog extends Component {
@@ -42,17 +43,15 @@ export default class Blog extends Component {
         return (
             <div className="Blog">
                 <input className="input" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
-                {this.state.posts
-                    .filter((post) =>
-                        post.message.toLowerCase()
-                            .includes(search))
-                    .map(post => (
-                        <div className="Blog__Post-Container" key={post.id}>
-                            <h3 className="Blog__Post__Message"> {post.title}</h3>
-                            <p className="Blog__Post__Message"> {post.message}</p>
-                            <p className="Blog__Post__Message"> By {post.user.nickName} on {post.date}</p>
-                        </div>
-                    ))}
+                <ul>
+                    {this.state.posts
+                        .filter((post) =>
+                            post.message.toLowerCase()
+                                .includes(search))
+                        .map(post => (
+                            <Post key={post.id} post={post} />
+                        ))}
+                </ul>
             </div>
         )
     }

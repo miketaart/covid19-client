@@ -2,7 +2,7 @@
   "data": [
     {
       "user": {
-        "nickName": "SillyDragon ",
+        "nickName": "SillyDragon",
         "email": "h.michael.ta@gmail.com",
         "gender": "female"
       },
@@ -41,8 +41,8 @@
           "isChecked": true
         }
       ],
-      "title": "Biden",
-      "message": "Trump",
+      "title": "This is a regular title",
+      "message": "This is my message to all the covid victims in the world",
       "date": "23-10-2020",
       "timeStamp": "17:36:38",
       "id": 6
