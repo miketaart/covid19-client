@@ -1,4 +1,7 @@
 .Navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +9,7 @@
 
     .Navbar__title {
         color: #CD4841;
-        font-size: 48px;
+        font-size: 60px;
     }
 
     .Navbar__TimeDate-container {

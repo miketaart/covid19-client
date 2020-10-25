@@ -1,11 +1,9 @@
 .Post {
     background-color: #FFF;
-    margin: 1vw;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(#000, 0.2);
-    width: 19vw;
-    height: 13vh;
     cursor: pointer;
     overflow: hidden;
 
@@ -35,7 +33,7 @@
     &__category {
         display: inline-block;
         padding: 8px 10px;
-        margin: 0 0 10px;
+        margin: 0 0 10px 0;
         color: #FFF;
         font-size: 0.75rem;
         font-weight: 600;

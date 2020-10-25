@@ -1,22 +1,26 @@
 .Dashboard {
+        position: sticky;
+        top: 96px;
+        height: 100%;
     display: flex;
     flex-direction: column;
+    width: 50vw;
+    height: 100vh;
     background-color: #243455;
-    margin: 0 0 12px 0;
+    margin-top: 96px;
 
     .Dashboard-container {
         display: flex;
-        justify-content: space-around;
         font-size: 3em;
         color: #CD4841;
 
         .Dashboard__Stat-container {
-            margin: 20px;
+            margin: 0 120px 0px 0px;
             display: flex;
             flex-direction: column;
 
             .Dashboard__Stat {
-                margin: 20px 0;
+                margin: 0 0 120px 0;
             }
         }
 
@@ -26,38 +30,34 @@
         }
     }
 
-    .Toggle {
-        display: flex;
-        justify-content: center;
-
-        .Toggle__Button {
-            margin-right: 8px;
-            border: 1px solid #AAA;
-            color: #555;
-            overflow: hidden;
-            width: 72px;
-            height: 25px;
-            padding: 3px 6px;
-            white-space: nowrap;
-        }
-    }
-
-
-
     .Dashboard__options-container {
         display: flex;
-        justify-content: center;
-        margin-bottom: 48px;
+        margin-bottom: 7px;
+
+        .Toggle {
+            .Toggle__Button {
+                margin-right: 8px;
+                border: 1px solid #AAA;
+                color: #555;
+                overflow: hidden;
+                width: 72px;
+                height: 24px;
+                white-space: nowrap;
+            }
+        }
 
         .Dashboard__Options-select {
             margin-right: 8px;
             border: 1px solid #AAA;
             color: #555;
             overflow: hidden;
-            height: 25px;
-            padding: 3px 6px;
+            height: 24px;
             white-space: nowrap;
             width: 300px;
+        }
+
+        .Dashboard__Options__Flag {
+            height: 25px;
         }
 
         .Dashboard__Options__Flag {

@@ -12,14 +12,18 @@
 
 body {
     background-color: #243455;
-    margin: 32px 48px 0 48px;
+    margin: 32px 72px 0 48px;
     padding: 0;
     font-family: roboto;
+    overflow: overlay;
+}
+
+.App__Content {
+    display: flex;
+    flex-direction: row;
 }
 
 .Home {
-    display: flex;
-    flex-direction: column;
     background-color: #243455;
 }
 
@@ -27,3 +31,4 @@ body {
     border-top: 1px solid green;
     width: 100%;
 }
+

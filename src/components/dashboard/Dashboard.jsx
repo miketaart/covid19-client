@@ -121,39 +121,6 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="Dashboard">
-                <div className="Dashboard-container">
-                    <div className="Dashboard__Stat-container">
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.totalCases.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Total cases</p>
-                        </div>
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.todayCases.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Today cases</p>
-                        </div>
-                    </div>
-                    <div className="Dashboard__Stat-container">
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.todayDeaths.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Today deaths</p>
-                        </div>
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.totalDeaths.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Total deaths</p>
-                        </div>
-                    </div>
-                    <div className="Dashboard__Stat-container">
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.totalRecovered.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Total recovered</p>
-                        </div>
-                        <div className="Dashboard__Stat">
-                            <h2>{this.state.todayRecovered.toLocaleString('en').replace(/,/g, '.')}</h2>
-                            <p>Today recovered</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="Dashboard__options-container">
                     <Toggle action={this.handleClick}>{this.state.getStatsYesterday ? 'Yesterday' : 'Today'}</Toggle>
 
@@ -168,9 +135,38 @@ class Dashboard extends Component {
                     <div className="Dashboard__Options__Flag-container">
                         <img className="Dashboard__Options__Flag" src={this.state.flagUrl} alt="Flag" />
                     </div>
-
                 </div>
-                <hr className="Breakline" />
+                <div className="Dashboard-container">
+                    <div className="Dashboard__Stat-container">
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.totalCases.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Total cases</p>
+                        </div>
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.totalDeaths.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Total deaths</p>
+                        </div>
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.totalRecovered.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Total recovered</p>
+                        </div>
+                    </div>
+                    <div className="Dashboard__Stat-container">
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.todayCases.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Today cases</p>
+                        </div>
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.todayDeaths.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Today deaths</p>
+                        </div>
+                        <div className="Dashboard__Stat">
+                            <h2>{this.state.todayRecovered.toLocaleString('en').replace(/,/g, '.')}</h2>
+                            <p>Today recovered</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         );
     }
