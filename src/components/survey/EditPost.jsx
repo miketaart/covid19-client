@@ -30,7 +30,7 @@ class EditPost extends Component {
 
   getPostDetails = () => {
     let postId = this.props.match.params.id;
-    axios.get(`http://localhost:5000/data/${postId}`)
+    axios.get(`${process.env.REACT_APP_API_BASE}/data/${postId}`)
       .then(response => {
         this.setState({
           nickName: response.data.user.nickName,
@@ -63,7 +63,7 @@ class EditPost extends Component {
       timeStamp: this.state.timeStamp
     }
 
-    axios.put(`http://localhost:5000/data/${this.state.id}`, response)
+    axios.put(`https://my-acato-server.herokuapp.com/data/${this.state.id}`, response)
     this.props.history.push(`/posts/${this.state.id}`)
   }
 

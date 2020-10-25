@@ -93,7 +93,7 @@ class Survey extends Component {
 
         const isValid = this.validate();
         if (isValid) {
-            axios.post("http://localhost:5000/data", response)
+            axios.post(`${process.env.REACT_APP_API_BASE}/data`, response)
             sessionStorage.clear("autoSave")
             this.props.history.push('/')
 

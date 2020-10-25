@@ -15,7 +15,7 @@ export default class Blog extends Component {
 
     getAllPosts = () => {
         axios
-            .get(`http://localhost:5000/data`)
+            .get(`${process.env.REACT_APP_API_BASE}/data`)
             .then((response) => {
                 this.setState({
                     posts: response.data,
