@@ -6,7 +6,7 @@
     background-color: #243455;
     margin-top: 96px;
 
-    .Dashboard-container {
+    &-container {
         display: flex;
         font-size: 2.5em;
         color: #CD4841;
@@ -27,7 +27,7 @@
         }
     }
 
-    .Dashboard__options-container {
+    .Dashboard__Options-container {
         display: flex;
         margin-bottom: 7px;
 
@@ -51,10 +51,6 @@
             height: 24px;
             white-space: nowrap;
             width: 300px;
-        }
-
-        .Dashboard__Options__Flag {
-            height: 25px;
         }
 
         .Dashboard__Options__Flag {
@@ -84,9 +80,8 @@
             }
         }
 
-        .Dashboard__options-container {
+        .Dashboard__Options-container {
             display: flex;
-            margin-bottom: 20px;
 
             .Toggle {
                 .Toggle__Button {
@@ -109,6 +104,12 @@
                 white-space: nowrap;
                 width: 300px;
             }
+        }
+    }
+
+    @media only screen and (max-width: 1575px) {
+        .Dashboard__Options-container {
+            margin-bottom: 42px;
         }
     }
 }

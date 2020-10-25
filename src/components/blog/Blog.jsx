@@ -63,11 +63,11 @@ export default class Blog extends Component {
     render() {
         let search = this.state.search.toLowerCase()
         return (
-            <div className="Blog-Container">
-                <div className="Blog__Edits-Container">
-                    <div className="Blog__Sort-container">
-                        <input className="Blog__search" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
-                        <div className="Blog__Sort">
+            <div className="Blog">
+                <div className="Blog__Edits">
+                    <div className="Blog__Edits-container">
+                        <input className="Blog__Edits__Search" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
+                        <div className="Blog__Edits__Sort">
                             <button onClick={this.sortByLatest} className="Blog__Sort-button">Sort by latest</button>
                             <button onClick={this.sortByEarliest} className="Blog__Sort-button">Sort by earliest</button>
                         </div>
@@ -78,7 +78,7 @@ export default class Blog extends Component {
                         <Link className="Blog__Add-link" to="/posts/survey">Add your experience</Link>
                     </button>
                 </div>
-                <div className="Blog">
+                <div className="Blog__Cards">
                     {this.state.posts
                         .filter((post) =>
                             post.message.toLowerCase()

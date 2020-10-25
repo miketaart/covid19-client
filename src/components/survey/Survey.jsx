@@ -103,9 +103,8 @@ class Survey extends Component {
     render() {
         return (
             <div className="Survey">
-                <div className="Survey_Header-Container">
-                    <p className="Survey_Header">Share your experience</p>
-                </div>
+                <h1 className="Survey__Header">Share your experience</h1>
+                <hr />
 
                 <form className="Survey__Form">
                     <p>
@@ -120,7 +119,8 @@ class Survey extends Component {
                             required="required"
                         />
                     </p>
-                    <p>
+                    <hr />
+                    <p className="Survey__Form__Radio">
                         <label>Your gender</label>
                         <input
                             type="radio"
@@ -128,10 +128,8 @@ class Survey extends Component {
                             value='male'
                             onChange={this.handleChange}
                             checked={this.state.gender === 'male'}
-
                         />
                         <label className="Survey__Form__Gender-label" htmlFor="gender">male</label>
-
                         <input
                             type="radio"
                             name="gender"
@@ -141,6 +139,7 @@ class Survey extends Component {
                         />
                         <label className="Survey__Form__Gender-label">female</label>
                     </p>
+                    <hr />
                     <p>
                         <label>
                             Date symptoms appeared
@@ -153,7 +152,7 @@ class Survey extends Component {
                             required="required"
                         />
                     </p>
-
+                    <hr />
                     <div>
                         <label>Check your symptoms</label>
                         <ul className="Survey__Form__List">
@@ -164,7 +163,7 @@ class Survey extends Component {
                             }
                         </ul>
                     </div>
-
+                    <hr />
                     <p>
                         <label>
                             Email
@@ -178,6 +177,7 @@ class Survey extends Component {
                             required="required"
                         />
                     </p>
+                    <hr />
                     <p>
                         <label>
                             Title of your post
@@ -190,6 +190,7 @@ class Survey extends Component {
                             required="required"
                         />
                     </p>
+                    <hr />
                     <p>
                         <label>
                             Describe your experience

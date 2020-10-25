@@ -32,33 +32,33 @@
   margin-top: 96px;
 }
 
-.Dashboard .Dashboard-container {
+.Dashboard-container {
   display: flex;
   font-size: 2.5em;
   color: #CD4841;
 }
 
-.Dashboard .Dashboard-container .Dashboard__Stat-container {
+.Dashboard-container .Dashboard__Stat-container {
   margin: 0 120px 0px 0px;
   display: flex;
   flex-direction: column;
 }
 
-.Dashboard .Dashboard-container .Dashboard__Stat-container .Dashboard__Stat {
+.Dashboard-container .Dashboard__Stat-container .Dashboard__Stat {
   margin: 0 0 120px 0;
 }
 
-.Dashboard .Dashboard-container .Dashboard__Stat p {
+.Dashboard-container .Dashboard__Stat p {
   color: #FFFFFF;
   font-size: 18px;
 }
 
-.Dashboard .Dashboard__options-container {
+.Dashboard .Dashboard__Options-container {
   display: flex;
   margin-bottom: 7px;
 }
 
-.Dashboard .Dashboard__options-container .Toggle .Toggle__Button {
+.Dashboard .Dashboard__Options-container .Toggle .Toggle__Button {
   margin-right: 8px;
   border: 1px solid #AAA;
   color: #555;
@@ -68,7 +68,7 @@
   white-space: nowrap;
 }
 
-.Dashboard .Dashboard__options-container .Dashboard__Options-select {
+.Dashboard .Dashboard__Options-container .Dashboard__Options-select {
   margin-right: 8px;
   border: 1px solid #AAA;
   color: #555;
@@ -78,11 +78,7 @@
   width: 300px;
 }
 
-.Dashboard .Dashboard__options-container .Dashboard__Options__Flag {
-  height: 25px;
-}
-
-.Dashboard .Dashboard__options-container .Dashboard__Options__Flag {
+.Dashboard .Dashboard__Options-container .Dashboard__Options__Flag {
   height: 24px;
 }
 
@@ -104,11 +100,10 @@
     color: #FFFFFF;
     font-size: 18px;
   }
-  .Dashboard .Dashboard__options-container {
+  .Dashboard .Dashboard__Options-container {
     display: flex;
-    margin-bottom: 20px;
   }
-  .Dashboard .Dashboard__options-container .Toggle .Toggle__Button {
+  .Dashboard .Dashboard__Options-container .Toggle .Toggle__Button {
     margin-right: 8px;
     border: 1px solid #AAA;
     color: #555;
@@ -117,7 +112,7 @@
     height: 24px;
     white-space: nowrap;
   }
-  .Dashboard .Dashboard__options-container .Dashboard__Options-select {
+  .Dashboard .Dashboard__Options-container .Dashboard__Options-select {
     margin-right: 8px;
     border: 1px solid #AAA;
     color: #555;
@@ -128,20 +123,57 @@
   }
 }
 
+@media only screen and (max-width: 1575px) {
+  .Dashboard .Dashboard__Options-container {
+    margin-bottom: 42px;
+  }
+}
+
 .Survey {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #243455;
+  margin-top: 72px;
+  margin-left: 2rem;
+  color: #CD4841;
+}
+
+.Survey .Survey__Header {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.Survey hr {
+  margin: 12px auto;
+}
+
+.Survey .Survey__Form p {
+  margin-bottom: 20px;
 }
 
 .Survey .Survey__Form p label {
+  font-size: 1.2rem;
   display: inline-block;
   width: 200px;
 }
 
+.Survey input {
+  border: none;
+  background: transparent;
+  height: 1.5rem;
+  margin-left: 1rem;
+  outline: none;
+  padding: 0 1rem;
+}
+
 .Survey .Survey__Form__Gender-label {
+  margin-left: 1rem;
   width: 50px !important;
+}
+
+.Survey .Survey__Form__Radio {
+  display: flex;
 }
 
 .Survey .Survey__Form__List {
@@ -151,34 +183,57 @@
 }
 
 .Survey .CheckBox {
+  display: flex;
+  align-items: center;
   list-style: none;
 }
 
-.Blog-Container {
+.Survey .CheckBox input {
+  margin-right: 6px;
+}
+
+.Survey .Survey__Form-button {
+  border: 1px solid #AAA;
+  overflow: hidden;
+  width: 196px;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
+  background-color: #CD4841;
+  display: inline-block;
+  color: #FFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Blog {
   margin-top: 96px;
   background-color: #243455;
   width: 50vw;
   height: 10%;
 }
 
-.Blog-Container .Blog__Edits-Container {
+.Blog__Edits {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.Blog-Container .Blog__Edits-Container .Blog__Sort-container {
+.Blog__Edits-container {
   display: flex;
 }
 
-.Blog-Container .Blog__Edits-Container .Blog__search {
+.Blog__Edits .Blog__Edits__Search {
   border: 1px solid #AAA;
   margin-right: 8px;
   padding: 3px 6px;
   width: 240px;
 }
 
-.Blog-Container .Blog__Edits-Container .Blog__Share-button {
+.Blog__Edits .Blog__Share-button {
   border: 1px solid #AAA;
   overflow: hidden;
   width: 184px;
@@ -195,15 +250,15 @@
   text-decoration: none;
 }
 
-.Blog-Container .Blog__Edits-Container .Blog__Share-button a:link,
-.Blog-Container .Blog__Edits-Container .Blog__Share-button a:visited,
-.Blog-Container .Blog__Edits-Container .Blog__Share-button a:hover,
-.Blog-Container .Blog__Edits-Container .Blog__Share-button a:active {
+.Blog__Edits .Blog__Share-button a:link,
+.Blog__Edits .Blog__Share-button a:visited,
+.Blog__Edits .Blog__Share-button a:hover,
+.Blog__Edits .Blog__Share-button a:active {
   text-decoration: none;
   color: #FFF;
 }
 
-.Blog-Container .Blog__Edits-Container .Blog__Sort-button {
+.Blog__Edits .Blog__Sort-button {
   margin-right: 8px;
   border: 1px solid #AAA;
   color: #555;
@@ -214,7 +269,7 @@
   white-space: nowrap;
 }
 
-.Blog-Container .Blog {
+.Blog .Blog__Cards {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -223,15 +278,11 @@
 }
 
 @media only screen and (max-width: 1575px) {
-  .Blog-Container .Blog__Sort-container {
-    display: flex;
-    flex-direction: row;
-  }
-  .Blog-Container .Blog__Sort-container {
+  .Blog .Blog__Edits-container {
     display: flex;
     flex-direction: column;
   }
-  .Blog-Container .Blog__Sort-container .Blog__search {
+  .Blog .Blog__Edits-container .Blog__Edits__Search {
     margin: 0 8px 8px 0;
   }
 }

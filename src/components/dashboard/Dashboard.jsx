@@ -119,7 +119,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="Dashboard">
-                <div className="Dashboard__options-container">
+                <div className="Dashboard__Options-container">
                     <Toggle action={this.handleClick}>{this.state.getStatsYesterday ? 'Yesterday' : 'Today'}</Toggle>
 
                     <div className="Dashboard__Options">
@@ -162,7 +162,6 @@ class Dashboard extends Component {
                             <h2>{this.state.todayRecovered.toLocaleString('en').replace(/,/g, '.')}</h2>
                             <p>Today recovered</p>
                         </div>
-
                     </div>
                 </div>
             </div>
