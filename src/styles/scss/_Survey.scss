@@ -36,6 +36,12 @@
         padding: 0 1rem;
     }
 
+     .error__message {
+         display: block;
+         color: green;
+         font-size: 0.75rem;
+     }
+
     .Survey__Form__Gender-label {
         margin-left: 1rem;
         width: 50px !important;

@@ -3,30 +3,36 @@ import axios from 'axios';
 import CheckBox from './CheckBox';
 import { withRouter } from 'react-router-dom';
 
+const initialState = {
+    nickName: '',
+    email: '',
+    gender: '',
+    dateSymptomsAppeared: '',
+    symptoms: [
+        { value: "Cough", isChecked: false },
+        { value: "High temperature", isChecked: false },
+        { value: "headache", isChecked: false },
+        { value: "Sore throat", isChecked: false },
+        { value: "Shortness of breath", isChecked: false },
+        { value: "Severe muscle pain", isChecked: false },
+        { value: "Harder to smell or taste", isChecked: false },
+        { value: "I have no symptoms", isChecked: false },
+    ],
+    title: '',
+    message: '',
+    date: '',
+    timeStamp: '',
+    nameError: '',
+    emailError: '',
+    titleError: '',
+    messageError: ''
+}
+
 class Survey extends Component {
     autoSave;
     constructor(props) {
         super(props)
-        this.state = {
-            nickName: '',
-            email: '',
-            gender: '',
-            dateSymptomsAppeared: '',
-            symptoms: [
-                { value: "Cough", isChecked: false },
-                { value: "High temperature", isChecked: false },
-                { value: "headache", isChecked: false },
-                { value: "Sore throat", isChecked: false },
-                { value: "Shortness of breath", isChecked: false },
-                { value: "Severe muscle pain", isChecked: false },
-                { value: "Harder to smell or taste", isChecked: false },
-                { value: "I have no symptoms", isChecked: false },
-            ],
-            title: '',
-            message: '',
-            date: '',
-            timeStamp: '',
-        }
+        this.state = initialState;
     }
 
     handleChange = (e) => {
@@ -39,6 +45,35 @@ class Survey extends Component {
             this.setState({ symptoms: symptoms })
         } else
             this.setState({ [e.target.name]: e.target.value })
+    }
+
+    validate = () => {
+        let nameError = '';
+        let emailError = '';
+        let titleError = '';
+        let messageError = '';
+
+        if (!this.state.nickName) {
+            nameError = 'We really want to know your name.';
+        }
+
+        if (!this.state.email.includes("@")) {
+            emailError = 'Forgot the @?';
+        }
+
+        if (!this.state.title) {
+            titleError = 'Throw me a title and I forgive you.';
+        }
+        if (!this.state.message) {
+            messageError = 'In a hurry? You forgot to tell your story.';
+        }
+
+        if (emailError || nameError || titleError || messageError) {
+            this.setState({ nameError, emailError, titleError, messageError });
+            return false;
+        }
+
+        return true;
     }
 
     handleSubmit = () => {
@@ -56,9 +91,14 @@ class Survey extends Component {
             timeStamp: new Date().toLocaleTimeString('nl-NL', { timeZone: 'Europe/Amsterdam' })
         }
 
-        axios.post("http://localhost:5000/data", response)
-        sessionStorage.clear("autoSave")
-        this.props.history.push('/')
+        const isValid = this.validate();
+        if (isValid) {
+            axios.post("http://localhost:5000/data", response)
+            sessionStorage.clear("autoSave")
+            this.props.history.push('/')
+
+            this.setState(initialState);
+        }
     }
 
     componentDidMount() {
@@ -118,6 +158,7 @@ class Survey extends Component {
                             onChange={this.handleChange}
                             required="required"
                         />
+                        <span className="error__message">{this.state.nameError}</span>
                     </p>
                     <hr />
                     <p className="Survey__Form__Radio">
@@ -176,6 +217,7 @@ class Survey extends Component {
                             onChange={this.handleChange}
                             required="required"
                         />
+                        <div className="error__message">{this.state.emailError}</div>
                     </p>
                     <hr />
                     <p>
@@ -189,6 +231,7 @@ class Survey extends Component {
                             onChange={this.handleChange}
                             required="required"
                         />
+                        <span className="error__message">{this.state.titleError}</span>
                     </p>
                     <hr />
                     <p>
@@ -202,6 +245,7 @@ class Survey extends Component {
                             onChange={this.handleChange}
                             required="required"
                         />
+                        <span className="error__message">{this.state.messageError}</span>
                     </p>
                     <button className="Survey__Form-button" onClick={this.handleSubmit}>Post your experience</button>
                 </form>
