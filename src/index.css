@@ -403,6 +403,16 @@
   color: #CD4841;
 }
 
+.EditForm .Survey__Form-button {
+  margin-right: 8px;
+  border: 1px solid #AAA;
+  color: #555;
+  overflow: hidden;
+  width: 72px;
+  height: 24px;
+  white-space: nowrap;
+}
+
 * {
   margin: 0;
   padding: 0;

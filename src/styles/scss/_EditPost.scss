@@ -15,4 +15,14 @@
         flex-direction: column;
         color: #CD4841;
     }
+
+    .Survey__Form-button {
+        margin-right: 8px;
+        border: 1px solid #AAA;
+        color: #555;
+        overflow: hidden;
+        width: 72px;
+        height: 24px;
+        white-space: nowrap;
+    }
 }

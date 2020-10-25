@@ -72,8 +72,6 @@ class EditPost extends Component {
   }
 
   componentDidMount() {
-    console.log('lalalala')
-    console.log(this.props)
     this.getPostDetails();
   }
 
@@ -103,7 +101,7 @@ class EditPost extends Component {
               required="required"
             />
           </p>
-          <Link to={`/posts/${this.props.match.params.id}`}>Back</Link>
+          <Link to={`/posts/${this.props.match.params.id}`}><button className="Survey__Form-button">Back</button></Link>
           <button className="Survey__Form-button" onClick={this.handleSubmit}>Edit</button>
         </form>
       </div>
