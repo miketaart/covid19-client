@@ -2,8 +2,8 @@
   "data": [
     {
       "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
+        "nickName": "Elwood Holcomb",
+        "email": "tchamm@colevillecapital.com",
         "gender": "female"
       },
       "dateSymptomsAppeared": "2020-10-12",
@@ -41,16 +41,16 @@
           "isChecked": true
         }
       ],
-      "title": "This is a title",
-      "message": "This is my experience",
+      "title": "An inconvenient truth",
+      "message": "Speaking out from self-isolation in Crested Butte, Colorado. She recently returned from a three-week trip to Hawaii. Lisa had a few sniffles during her travels, but when she returned home, she started experiencing some strong muscle aches. She said it was like someone was stabbing me with an ice pick. Lisa started feeling nauseous and then came down with a fever. Shortness of breath and fatigue appeared and she later received a positive test result for coronavirus. From her experience, the muscle aches were the worst, but the shortness of breath and exhaustion were also intense.",
       "date": "24-10-2020",
       "timeStamp": "18:22:48",
       "id": 1
     },
     {
       "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
+        "nickName": "Kendrick Macleod",
+        "email": "fluis_gabriel@optoseo.com",
         "gender": "female"
       },
       "dateSymptomsAppeared": "2020-10-12",
@@ -88,16 +88,16 @@
           "isChecked": true
         }
       ],
-      "title": "This is a title",
-      "message": "This is my experience",
+      "title": "Elizabeth woke up with a body temperature of 103 degrees",
+      "message": "Washington first began experiencing flu-like symptoms on February 25, and they occurred three days after she attended a party with someone carrying the Coronavirus. She initially felt some fatigue, like a bad cold, followed by a headache, fever, and body aches. Thinking that a nap would relieve some of her symptoms, Elizabeth woke up with a body temperature of 103 degrees. She felt the chills and started shivering. She was up to date with her flu shot so Elizabeth began to suspect she had something more serious after reading several posts on social media. To cope, she took some over-the-counter flu medication and rested in her home. Being in the scientific community, Elizabeth enrolled herself in a research program called the Seattle Flu Study and was mailed a nasal swab kit by the researchers, which she mailed back. And the wait began...",
       "date": "24-08-2020",
       "timeStamp": "18:22:48",
       "id": 2
     },
     {
       "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
+        "nickName": "Isla-Grace Francis",
+        "email": "waziz.4554y@ncpine.com",
         "gender": "female"
       },
       "dateSymptomsAppeared": "2020-10-12",
@@ -135,16 +135,16 @@
           "isChecked": true
         }
       ],
-      "title": "This is a title",
-      "message": "This is my experience",
+      "title": "Suspected coronavirus went viral on Facebook",
+      "message": "Hillary Diane was discharged from the ER after her experience with suspected coronavirus went viral on Facebook. Hillary lives in Massachusetts down the street from the Biogen conference site where over 70 people were infected and also traveled to NYC for business the week before. She reportedly did not meet the CDC guidelines for having come in direct contact with someone who has confirmed tested positive, the hospital was not able to provide the test for COVID-19, due to a shortage in capacity at the MA Department of Public Health.",
       "date": "20-10-2020",
       "timeStamp": "18:22:48",
       "id": 4
     },
     {
       "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
+        "nickName": "Mabel Richards",
+        "email": "oadham.nemo.3l@custmon.net",
         "gender": "female"
       },
       "dateSymptomsAppeared": "2020-10-12",
@@ -182,434 +182,11 @@
           "isChecked": true
         }
       ],
-      "title": "This is a title",
-      "message": "This is my experience",
+      "title": "The infamous Diamond Princess cruise ship",
+      "message": "Carl Goldman, 67-years-old, was on the infamous Diamond Princess cruise ship in Japan and left the ship to fly back to the United States. More than 700 people were diagnosed with Coronavirus. Carl and his wife left before the quarantine was lifted. Little did he know there was a birthday surprise waiting for him. On his way back, Carl woke up from a nap with a 103-degree fever. While his fever broke by the time he reached America, he started experiencing massive body fatigue. 'Feeling like it had been punched a few times,' He was admitted to a biocontainment center in Omaha, Nebraska, where he has just had a lingering dry cough.While in isolation, Carl celebrated his 67th birthday. The hospital staff delivered him a surprise birthday cake sang “Happy Birthday” through the two-way monitors. It's just kind of funny, Carl said. Who would've thought my 67th birthday would've been in the biocontainment center in Omaha? Carl fills his hours keeping up with his blog, staying on top of work for the radio station and FaceTiming with his wife, who was eventually released and is now back in California.",
       "date": "24-10-1999",
       "timeStamp": "18:22:48",
       "id": 5
-    },
-    {
-      "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "This is a title",
-      "message": "This is my experience",
-      "date": "24-12-2020",
-      "timeStamp": "18:22:48",
-      "id": 6
-    },
-    {
-      "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "This is a title",
-      "message": "This is my experience",
-      "date": "24-10-2001",
-      "timeStamp": "18:22:48",
-      "id": 7
-    },
-    {
-      "user": {
-        "nickName": "Guy544",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "This is a title",
-      "message": "This is my experience",
-      "date": "24-10-2019",
-      "timeStamp": "18:22:48",
-      "id": 8
-    },
-    {
-      "user": {
-        "nickName": "Laalaaaa",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-21",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": false
-        }
-      ],
-      "title": "hallo dit is een test, max aan",
-      "message": "fffd",
-      "date": "24-10-2120",
-      "timeStamp": "18:26:12",
-      "id": 9
-    },
-    {
-      "user": {
-        "nickName": "Bawling",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "practice classes",
-      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
-      "date": "24-10-3020",
-      "timeStamp": "18:27:09",
-      "id": 10
-    },
-    {
-      "user": {
-        "nickName": "Laalaaaa",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-21",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": false
-        }
-      ],
-      "title": "hallo dit is een test, max aan",
-      "message": "fffd",
-      "date": "19-10-2020",
-      "timeStamp": "18:26:12",
-      "id": 11
-    },
-    {
-      "user": {
-        "nickName": "Bawling",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "practice classes",
-      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
-      "date": "24-02-2020",
-      "timeStamp": "18:27:09",
-      "id": 12
-    },
-    {
-      "user": {
-        "nickName": "Laalaaaa",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-21",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": false
-        }
-      ],
-      "title": "hallo dit is een test, max aan",
-      "message": "fffd",
-      "date": "24-3-2020",
-      "timeStamp": "18:26:12",
-      "id": 13
-    },
-    {
-      "user": {
-        "nickName": "Bawling",
-        "email": "h.michael.ta@gmail.com",
-        "gender": "female"
-      },
-      "dateSymptomsAppeared": "2020-10-12",
-      "symptoms": [
-        {
-          "value": "Cough",
-          "isChecked": false
-        },
-        {
-          "value": "High temperature",
-          "isChecked": false
-        },
-        {
-          "value": "headache",
-          "isChecked": false
-        },
-        {
-          "value": "Sore throat",
-          "isChecked": false
-        },
-        {
-          "value": "Shortness of breath",
-          "isChecked": true
-        },
-        {
-          "value": "Severe muscle pain",
-          "isChecked": true
-        },
-        {
-          "value": "Harder to smell or taste",
-          "isChecked": true
-        },
-        {
-          "value": "I have no symptoms",
-          "isChecked": true
-        }
-      ],
-      "title": "practice classes",
-      "message": "fffdfdsafds fdasfsdf fdsfds fsdfdsfdsfdsf fdsfdsfdsffff. fdsfsdf ffsdfsdf.  fsdfdsf.   fdsfffdfdffdfdfffdfdf",
-      "date": "24-10-2019",
-      "timeStamp": "18:27:09",
-      "id": 14
     }
   ]
 }
