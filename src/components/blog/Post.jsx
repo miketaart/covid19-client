@@ -15,7 +15,7 @@ class Post extends Component {
                 <article className="Post" key={this.state.post.id}>
                     <h3 className="Post__category">Experience</h3>
                     <h2 className="Post__title">{this.state.post.title}</h2>
-                    <p className="Post__message"> {this.state.post.message.replace(/^(.{50}[^\s]*).*/, "$1") + '...'}</p>
+                    <p className="Post__message"> {this.state.post.message.replace(/^(.{120}[^\s]*).*/, "$1") + '... '} <Link to={`/posts/${this.state.post.id}`}>Click me</Link> </p>
                     <p className="Post__user"> By {this.state.post.user.nickName} on {this.state.post.date}</p>
                 </article>
             </Link>

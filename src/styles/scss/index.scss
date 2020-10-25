@@ -3,6 +3,8 @@
 @import "Survey";
 @import "Blog";
 @import "Post";
+@import "PostDetails";
+@import "EditPost";
 
 
 * {
@@ -11,6 +13,7 @@
 }
 
 body {
+    overflow-y: hidden;
     background-color: #243455;
     margin: 32px 72px 0 48px;
     padding: 0;
@@ -31,4 +34,3 @@ body {
     border-top: 1px solid green;
     width: 100%;
 }
-

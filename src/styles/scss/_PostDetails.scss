@@ -1,0 +1,27 @@
+    .PostDetails {
+        margin-top: 96px;
+        background-color: #243455;
+        width: 50vw;
+
+        .PostDetails__Experience {
+            padding: 20px;
+            background-color: white;
+        }
+
+        &-button {
+            border: 1px solid #AAA;
+            overflow: hidden;
+            width: 96px;
+            height: 25px;
+            padding: 3px 6px;
+            white-space: nowrap;
+            background-color: #CD4841;
+            display: inline-block;
+            color: #FFF;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.075rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }

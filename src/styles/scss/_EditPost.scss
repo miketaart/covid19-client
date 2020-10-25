@@ -1,0 +1,18 @@
+.EditForm {
+    margin-top: 96px;
+
+    .EditForm__Title {
+        width: 500px;
+        margin-bottom: 4px;
+    }
+
+    .EditForm__Message {
+        width: 500px;
+        height: 300px;
+    }
+    &-container {
+        display: flex;
+        flex-direction: column;
+        color: #CD4841;
+    }
+}

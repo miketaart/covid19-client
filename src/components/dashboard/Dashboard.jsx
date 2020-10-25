@@ -60,7 +60,6 @@ class Dashboard extends Component {
         } else {
             axios.get(`https://disease.sh/v3/covid-19/countries/${this.state.selectedCountry}?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false&strict=true`)
                 .then((res) => {
-                    console.log(res.data)
                     this.setState({
                         loading: false,
                         population: res.data.population,
@@ -83,7 +82,6 @@ class Dashboard extends Component {
     getTotalInfo = () => {
         axios.get(`https://disease.sh/v3/covid-19/all?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
             .then((res) => {
-                console.log(res.data)
                 this.setState({
                     loading: false,
                     population: res.data.population,

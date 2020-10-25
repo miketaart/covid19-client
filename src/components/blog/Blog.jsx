@@ -65,17 +65,19 @@ export default class Blog extends Component {
         return (
             <div className="Blog-Container">
                 <div className="Blog__Edits-Container">
-                    <div>
+                    <div className="Blog__Sort-container">
                         <input className="Blog__search" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />
-                        <button onClick={this.sortByLatest} className="Blog__Sort-button">Sort by latest</button>
-                        <button onClick={this.sortByEarliest} className="Blog__Sort-button">Sort by earliest</button>
+                        <div className="Blog__Sort">
+                            <button onClick={this.sortByLatest} className="Blog__Sort-button">Sort by latest</button>
+                            <button onClick={this.sortByEarliest} className="Blog__Sort-button">Sort by earliest</button>
+                        </div>
+
                     </div>
-                    
+
                     <button className="Blog__Share-button">
                         <Link className="Blog__Add-link" to="/posts/survey">Add your experience</Link>
                     </button>
                 </div>
-
                 <div className="Blog">
                     {this.state.posts
                         .filter((post) =>

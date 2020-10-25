@@ -10,7 +10,7 @@
 
 .Navbar .Navbar__title {
   color: #CD4841;
-  font-size: 60px;
+  font-size: 48px;
 }
 
 .Navbar .Navbar__TimeDate-container {
@@ -24,9 +24,6 @@
 }
 
 .Dashboard {
-  position: sticky;
-  top: 96px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   width: 50vw;
@@ -37,7 +34,7 @@
 
 .Dashboard .Dashboard-container {
   display: flex;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #CD4841;
 }
 
@@ -89,6 +86,48 @@
   height: 24px;
 }
 
+@media only screen and (max-width: 1440px) {
+  .Dashboard .Dashboard-container {
+    display: flex;
+    font-size: 1.5em;
+    color: #CD4841;
+  }
+  .Dashboard .Dashboard-container .Dashboard__Stat-container {
+    margin: 0 60px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Dashboard .Dashboard-container .Dashboard__Stat-container .Dashboard__Stat {
+    margin: 0 0 60px 0;
+  }
+  .Dashboard .Dashboard-container .Dashboard__Stat p {
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  .Dashboard .Dashboard__options-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .Dashboard .Dashboard__options-container .Toggle .Toggle__Button {
+    margin-right: 8px;
+    border: 1px solid #AAA;
+    color: #555;
+    overflow: hidden;
+    width: 72px;
+    height: 24px;
+    white-space: nowrap;
+  }
+  .Dashboard .Dashboard__options-container .Dashboard__Options-select {
+    margin-right: 8px;
+    border: 1px solid #AAA;
+    color: #555;
+    overflow: hidden;
+    height: 24px;
+    white-space: nowrap;
+    width: 300px;
+  }
+}
+
 .Survey {
   display: flex;
   flex-direction: column;
@@ -119,12 +158,17 @@
   margin-top: 96px;
   background-color: #243455;
   width: 50vw;
+  height: 10%;
 }
 
 .Blog-Container .Blog__Edits-Container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__Sort-container {
+  display: flex;
 }
 
 .Blog-Container .Blog__Edits-Container .Blog__search {
@@ -176,6 +220,20 @@
   flex-wrap: wrap;
   max-width: 100vw;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1575px) {
+  .Blog-Container .Blog__Sort-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .Blog-Container .Blog__Sort-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Blog-Container .Blog__Sort-container .Blog__search {
+    margin: 0 8px 8px 0;
+  }
 }
 
 .Post {
@@ -246,12 +304,61 @@
   text-decoration: none;
 }
 
+.PostDetails {
+  margin-top: 96px;
+  background-color: #243455;
+  width: 50vw;
+}
+
+.PostDetails .PostDetails__Experience {
+  padding: 20px;
+  background-color: white;
+}
+
+.PostDetails-button {
+  border: 1px solid #AAA;
+  overflow: hidden;
+  width: 96px;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
+  background-color: #CD4841;
+  display: inline-block;
+  color: #FFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.EditForm {
+  margin-top: 96px;
+}
+
+.EditForm .EditForm__Title {
+  width: 500px;
+  margin-bottom: 4px;
+}
+
+.EditForm .EditForm__Message {
+  width: 500px;
+  height: 300px;
+}
+
+.EditForm-container {
+  display: flex;
+  flex-direction: column;
+  color: #CD4841;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  overflow-y: hidden;
   background-color: #243455;
   margin: 32px 72px 0 48px;
   padding: 0;

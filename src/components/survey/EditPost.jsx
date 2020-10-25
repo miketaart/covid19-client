@@ -64,9 +64,7 @@ class EditPost extends Component {
     }
 
     axios.put(`http://localhost:5000/data/${this.state.id}`, response)
-      .then(response => {
-        this.props.history.push(`/posts/${this.state.id}`)
-      })
+    this.props.history.push(`/posts/${this.state.id}`)
   }
 
   handleChange = (e) => {
@@ -74,15 +72,19 @@ class EditPost extends Component {
   }
 
   componentDidMount() {
+    console.log('lalalala')
+    console.log(this.props)
     this.getPostDetails();
   }
 
   render() {
     return (
-      <div>
+      <div className="EditForm">
         <form>
-          <p>
+          <p className="EditForm-container">
+            <label htmlFor="title">Title</label>
             <input
+              className="EditForm__Title"
               placeholder="Edit title"
               name="title"
               value={this.state.title}
@@ -90,8 +92,10 @@ class EditPost extends Component {
               required="required"
             />
           </p>
-          <p>
-            <input
+          <p className="EditForm-container">
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="EditForm__Message"
               placeholder="Edit message"
               name="message"
               value={this.state.message}

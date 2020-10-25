@@ -52,16 +52,16 @@ class PostDetails extends Component {
     }
     render() {
         return (
-            <div className="">
-                <article>
-                    <h2 className="Post__title"> {this.state.title}</h2>
-                    <p className="Post__user">A {this.state.gender} named {this.state.name} started feeling symptoms on {this.state.dateSymptomsAppeared}</p>
-                    <p className="Post__message"> {this.state.message}</p>
+            <div className="PostDetails">
+                <article className="PostDetails__Experience">
+                    <h2 className="PostDetails__title"> {this.state.title}</h2>
+                    <p className="PostDetails__user">A {this.state.gender} named {this.state.name} started feeling symptoms on {this.state.dateSymptomsAppeared}</p>
+                    <p className="PostDetails__message"> {this.state.message}</p>
                 </article>
 
-                <Link to="/">Back</Link>
-                <Link to={`/posts/edit/${this.props.match.params.id}`}>Edit</Link>
-                <button onClick={this.deletePost}>Delete post</button>
+                <Link to="/"><button className="PostDetails-button">Back</button></Link>
+                <Link to={`/posts/edit/${this.props.match.params.id}`}><button className="PostDetails-button">Edit</button></Link>
+                <button className="PostDetails-button" onClick={this.deletePost}>Delete</button>
             </div>
         );
     }
