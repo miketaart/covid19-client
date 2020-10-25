@@ -17,7 +17,6 @@ export default class Blog extends Component {
         axios
             .get(`http://localhost:5000/data`)
             .then((response) => {
-                console.log(response.data)
                 this.setState({
                     posts: response.data,
                 }, () => { console.log(this.state.posts) })
@@ -63,11 +62,10 @@ export default class Blog extends Component {
 
     render() {
         let search = this.state.search.toLowerCase()
-
         return (
             <div className="Blog-Container">
                 <div className="Blog__Edits-Container">
-                    <button className="Blog__Sort-button">
+                    <button className="Blog__Share-button">
                         <Link className="Blog__Add-link" to="/posts/survey">Share your experience</Link>
                     </button>
                     <input className="Blog__search" type="text" placeholder="Search in messages" value={this.state.search} onChange={this.updateSearch} />

@@ -1,22 +1,41 @@
 .Blog-Container {
+    margin-top: 48px;
+    background-color: #243455;
+
     .Blog__Edits-Container {
         display: flex;
         justify-content: center;
 
         .Blog__search {
-            border: 1 solid black;
-            margin: 0 10px;
-            padding: 4px;
+            border: 1px solid #AAA;
+            margin-right: 8px;
+            padding: 3px 6px;
         }
 
-        .Blog__Sort-button {
-            border: 1 solid black;
-            margin: 0 10px;
-            padding: 4px;
+        .Blog__Share-button {
+            margin-right: 8px;
+            border: 1px solid #AAA;
+            color: #555;
+            overflow: hidden;
+            width: 156px;
+            height: 25px;
+            padding: 3px 6px;
+            white-space: nowrap;
 
             .Blog__Add-link {
                 text-decoration: none;
             }
+        }
+
+        .Blog__Sort-button {
+            margin-right: 8px;
+            border: 1px solid #AAA;
+            color: #555;
+            overflow: hidden;
+            width: 108px;
+            height: 25px;
+            padding: 3px 6px;
+            white-space: nowrap;
         }
 
     }
@@ -24,7 +43,7 @@
     .Blog {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        //width: 100%;
         max-width: 100vw;
         margin: 0 auto;
     }

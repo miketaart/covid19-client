@@ -1,15 +1,20 @@
 .Navbar {
   display: flex;
-  justify-content: space-between;
-  background-color: #F5E0CD;
+  flex-direction: column;
+  align-items: center;
+  background-color: #243455;
 }
 
 .Navbar .Navbar__title {
   color: #CD4841;
+  font-size: 48px;
 }
 
 .Navbar .Navbar__TimeDate-container {
-  height: 50px;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+  width: 250px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -18,21 +23,29 @@
 .Dashboard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 25vh;
+  background-color: #243455;
+  margin: 0 0 12px 0;
 }
 
-.Dashboard .Dashboard__Stat-container {
+.Dashboard .Dashboard-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 48px;
+  justify-content: space-around;
+  font-size: 3em;
   color: #CD4841;
-  background-color: #F5E0CD;
 }
 
-.Dashboard .Dashboard__Stat-container .Dashboard__Stat p {
-  color: #444;
+.Dashboard .Dashboard-container .Dashboard__Stat-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dashboard .Dashboard-container .Dashboard__Stat-container .Dashboard__Stat {
+  margin: 20px 0;
+}
+
+.Dashboard .Dashboard-container .Dashboard__Stat p {
+  color: #FFFFFF;
   font-size: 18px;
 }
 
@@ -42,16 +55,31 @@
 }
 
 .Dashboard .Toggle .Toggle__Button {
-  width: 100px;
+  margin-right: 8px;
+  border: 1px solid #AAA;
+  color: #555;
+  overflow: hidden;
+  width: 72px;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
 }
 
 .Dashboard .Dashboard__options-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 48px;
 }
 
-.Dashboard .Dashboard__options-container .Dashboard__Options {
-  height: 24px;
+.Dashboard .Dashboard__options-container .Dashboard__Options-select {
+  margin-right: 8px;
+  border: 1px solid #AAA;
+  color: #555;
+  overflow: hidden;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
+  width: 300px;
 }
 
 .Dashboard .Dashboard__options-container .Dashboard__Options__Flag {
@@ -62,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F5E0CD;
+  background-color: #243455;
 }
 
 .Survey .Survey__Form p label {
@@ -84,31 +112,51 @@
   list-style: none;
 }
 
+.Blog-Container {
+  margin-top: 48px;
+  background-color: #243455;
+}
+
 .Blog-Container .Blog__Edits-Container {
   display: flex;
   justify-content: center;
 }
 
 .Blog-Container .Blog__Edits-Container .Blog__search {
-  border: 1 solid black;
-  margin: 0 10px;
-  padding: 4px;
+  border: 1px solid #AAA;
+  margin-right: 8px;
+  padding: 3px 6px;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__Share-button {
+  margin-right: 8px;
+  border: 1px solid #AAA;
+  color: #555;
+  overflow: hidden;
+  width: 156px;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+
+.Blog-Container .Blog__Edits-Container .Blog__Share-button .Blog__Add-link {
+  text-decoration: none;
 }
 
 .Blog-Container .Blog__Edits-Container .Blog__Sort-button {
-  border: 1 solid black;
-  margin: 0 10px;
-  padding: 4px;
-}
-
-.Blog-Container .Blog__Edits-Container .Blog__Sort-button .Blog__Add-link {
-  text-decoration: none;
+  margin-right: 8px;
+  border: 1px solid #AAA;
+  color: #555;
+  overflow: hidden;
+  width: 108px;
+  height: 25px;
+  padding: 3px 6px;
+  white-space: nowrap;
 }
 
 .Blog-Container .Blog {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   max-width: 100vw;
   margin: 0 auto;
 }
@@ -119,7 +167,7 @@
   padding: 20px;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 20vw;
+  width: 19vw;
   height: 13vh;
   cursor: pointer;
   overflow: hidden;
@@ -186,11 +234,22 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #243455;
+  margin: 32px 48px 0 48px;
+  padding: 0;
   font-family: roboto;
-  background-color: #F5E0CD;
 }
 
 .Home {
   display: flex;
   flex-direction: column;
+  background-color: #243455;
+}
+
+.Breakline {
+  border-top: 1px solid green;
+  width: 100%;
 }

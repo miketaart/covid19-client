@@ -1,14 +1,19 @@
 .Navbar {
     display: flex;
-    justify-content: space-between;
-    background-color: #F5E0CD;
+    flex-direction: column;
+    align-items: center;
+    background-color: #243455;
 
     .Navbar__title {
         color: #CD4841;
+        font-size: 48px;
     }
 
     .Navbar__TimeDate-container {
-        height: 50px;
+        color: #FFFFFF;
+        margin: 0 0 8px 0;
+        width: 250px;
+        height: 20px;
         display: flex;
         align-items: center;
         justify-content: space-around;

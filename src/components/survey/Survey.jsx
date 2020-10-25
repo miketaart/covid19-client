@@ -95,9 +95,10 @@ class Survey extends Component {
         }
     }
 
-    componentWillUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps, prevState) {
         sessionStorage.setItem('autoSave', JSON.stringify(prevState));
     }
+
 
     render() {
         return (
