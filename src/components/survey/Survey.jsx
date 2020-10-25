@@ -62,7 +62,6 @@ class Survey extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
         this.autoSave = JSON.parse(sessionStorage.getItem('autoSave'));
         if (sessionStorage.getItem('autoSave')) {
             this.setState({
