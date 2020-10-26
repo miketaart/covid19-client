@@ -85,6 +85,7 @@ Highly stressful but also pleasant day. Spent most of the day on styling and hal
 
 ### Monday (coming)
 Deployed to share the app with friends and family who were asking why I react(ed...) a bit slow to their messages.
+https://thecovid19experience.netlify.app/
 
 ## Screenshots
 - **The Covid-19 Experience**
