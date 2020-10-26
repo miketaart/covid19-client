@@ -6,10 +6,23 @@
         .PostDetails__Experience {
             padding: 20px;
             background-color: white;
+            line-height: 1.5rem;
+
+            .PostDetails__title {
+                line-height: 1.75rem;
+            }
+
+            .PostDetails__User {
+                background-color: white;
+                color: #666;
+                font-size: 0.7rem;
+                line-height: 1.75rem;
+            }
         }
 
         &-button {
             border: 1px solid #AAA;
+            margin: 8px 8px 0 0;
             overflow: hidden;
             width: 96px;
             height: 25px;

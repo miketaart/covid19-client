@@ -55,9 +55,9 @@ class PostDetails extends Component {
         return (
             <div className="PostDetails">
                 <article className="PostDetails__Experience">
-                    <h2 className="PostDetails__title"> {this.state.title}</h2>
-                    <p className="PostDetails__user">A {this.state.gender} named {this.state.name} started feeling symptoms on {this.state.dateSymptomsAppeared}</p>
-                    <p className="PostDetails__message"> {this.state.message}</p>
+                    <h2 className="PostDetails__Title"> {this.state.title}</h2>
+                    <p className="PostDetails__User">Written by {this.state.name} ({this.state.gender}). Symptoms appeared for the first time on {this.state.dateSymptomsAppeared}.</p>
+                    <p className="PostDetails__Message"> {this.state.message}</p>
                 </article>
 
                 <Link to="/"><button className="PostDetails-button">Back</button></Link>
