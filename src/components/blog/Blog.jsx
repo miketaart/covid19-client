@@ -13,25 +13,28 @@ export default class Blog extends Component {
         }
     }
 
+    // Get all posts/data 
     getAllPosts = () => {
         axios
             .get(`${process.env.REACT_APP_API_BASE}/data`)
             .then((response) => {
                 this.setState({
                     posts: response.data,
-                }, () => { console.log(this.state.posts) })
+                })
             })
             .catch((error) => {
                 console.log(error);
             })
     }
 
+    // Sort logic -> compares two dates by tweaking both dates (19-10-2020 becomes 20201019 ie.). Determines which comes first.
     sortEarliestLogic = (a, b) => {
         a = a.date.split('-').reverse().join('');
         b = b.date.split('-').reverse().join('');
         return a.localeCompare(b);
     }
 
+    // Sort logic -> compares two dates by tweaking both dates (19-10-2020 becomes 20201019 ie.). Determines which comes first.
     sortLatestLogic = (a, b) => {
         a = a.date.split('-').reverse().join('');
         b = b.date.split('-').reverse().join('');
@@ -50,6 +53,7 @@ export default class Blog extends Component {
         });
     };
 
+    // Update every change in the filter/searchbar
     updateSearch = (e) => {
         this.setState({
             search: e.target.value

@@ -28,6 +28,7 @@ class EditPost extends Component {
     }
   }
 
+  // Get details of a post based on id
   getPostDetails = () => {
     let postId = this.props.match.params.id;
     axios.get(`${process.env.REACT_APP_API_BASE}/data/${postId}`)
@@ -48,6 +49,7 @@ class EditPost extends Component {
       .catch(err => console.log(err));
   }
 
+  // Submit form and redirect back to post detail page
   handleSubmit = () => {
     let response = {
       user: {
@@ -62,7 +64,6 @@ class EditPost extends Component {
       date: this.state.date,
       timeStamp: this.state.timeStamp
     }
-
     axios.put(`${process.env.REACT_APP_API_BASE}/data/${this.state.id}`, response)
     this.props.history.push(`/posts/${this.state.id}`)
   }

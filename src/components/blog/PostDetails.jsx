@@ -16,6 +16,7 @@ class PostDetails extends Component {
         }
     }
 
+    //Get a single post/experience based on the id
     getSinglePost() {
         let postId = this.props.match.params.id;
         axios.get(`${process.env.REACT_APP_API_BASE}/data/${postId}`)
@@ -28,13 +29,14 @@ class PostDetails extends Component {
                     dateSymptomsAppeared: response.data.dateSymptomsAppeared.split('-').reverse().join('-'),
                     symptomsList: response.data.symptoms,
                     message: response.data.message
-                }, () => { console.log(this.state.gender) })
+                })
             })
             .catch((error) => {
                 console.log(error);
             })
     }
 
+    // Delete a single post/experience based on the id
     deletePost = () => {
         let postId = this.props.match.params.id;
         axios.delete(`${process.env.REACT_APP_API_BASE}/data/${postId}`)
@@ -47,7 +49,6 @@ class PostDetails extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
         this.getSinglePost()
     }
     render() {

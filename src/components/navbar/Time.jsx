@@ -8,6 +8,7 @@ export default class Time extends Component {
         }
     }
 
+    // Get specific time accurate on the second
     currentTime = () => {
         this.setState({
             time: new Date()
@@ -15,6 +16,7 @@ export default class Time extends Component {
     }
 
     componentDidMount() {
+        // Repeat getting time every second to create a clock
         setInterval(() => this.currentTime(), 1000)
     }
     render() {

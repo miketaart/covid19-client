@@ -38,7 +38,7 @@ class Dashboard extends Component {
             getStatsYesterday: false
         }
     }
-
+    // Get all the countries where covid situation is tracked
     getAllCountries = () => {
         axios
             .get(`${process.env.REACT_APP_COVID_API}/countries?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
@@ -52,7 +52,7 @@ class Dashboard extends Component {
                 console.log(error);
             })
     }
-
+    // Get specific data on a country where covid situation is tracked
     getCountryInfo = () => {
         if (this.state.selectedCountry === 'world') {
             this.getTotalInfo()
@@ -78,6 +78,7 @@ class Dashboard extends Component {
         }
     }
 
+    // Get numbers of covid situation in the whole world
     getTotalInfo = () => {
         axios.get(`${process.env.REACT_APP_COVID_API}/all?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
             .then((res) => {
@@ -105,6 +106,7 @@ class Dashboard extends Component {
         }, () => this.getCountryInfo())
     }
 
+    // If this is true then request yesterday's covid data
     handleClick = () => {
         this.setState({
             getStatsYesterday: !this.state.getStatsYesterday

@@ -34,7 +34,7 @@ class Survey extends Component {
         super(props)
         this.state = initialState;
     }
-
+    // Depending on html tag type property handle every change and set change to state
     handleChange = (e) => {
         if (e.target.type === 'checkbox') {
             let symptoms = this.state.symptoms
@@ -46,7 +46,7 @@ class Survey extends Component {
         } else
             this.setState({ [e.target.name]: e.target.value })
     }
-
+    // Validation requirements. If certain form state does not meet then show message to client.
     validate = () => {
         let nameError = '';
         let emailError = '';
@@ -75,7 +75,7 @@ class Survey extends Component {
 
         return true;
     }
-
+    // Submit form and redirect to homepage if form validation is satisfied
     handleSubmit = () => {
         let response = {
             user: {
@@ -102,6 +102,7 @@ class Survey extends Component {
     }
 
     componentDidMount() {
+        // Save answers of form in case browser refreshes by using session storage. No need to refill form.
         this.autoSave = JSON.parse(sessionStorage.getItem('autoSave'));
         if (sessionStorage.getItem('autoSave')) {
             this.setState({
