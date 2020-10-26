@@ -63,7 +63,7 @@ class EditPost extends Component {
       timeStamp: this.state.timeStamp
     }
 
-    axios.put(`https://my-acato-server.herokuapp.com/data/${this.state.id}`, response)
+    axios.put(`${process.env.REACT_APP_API_BASE}/data/${this.state.id}`, response)
     this.props.history.push(`/posts/${this.state.id}`)
   }
 

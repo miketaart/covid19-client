@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Toggle from './Toggle';
 
-
 /*
     Nice to haves: 
     show time of selected country instead of time client's location.
@@ -42,7 +41,7 @@ class Dashboard extends Component {
 
     getAllCountries = () => {
         axios
-            .get(`https://disease.sh/v3/covid-19/countries?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
+            .get(`${process.env.REACT_APP_COVID_API}/countries?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
             .then((response) => {
                 this.setState({
                     loading: false,
@@ -58,7 +57,7 @@ class Dashboard extends Component {
         if (this.state.selectedCountry === 'world') {
             this.getTotalInfo()
         } else {
-            axios.get(`https://disease.sh/v3/covid-19/countries/${this.state.selectedCountry}?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false&strict=true`)
+            axios.get(`${process.env.REACT_APP_COVID_API}/countries/${this.state.selectedCountry}?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false&strict=true`)
                 .then((res) => {
                     this.setState({
                         loading: false,
@@ -80,7 +79,7 @@ class Dashboard extends Component {
     }
 
     getTotalInfo = () => {
-        axios.get(`https://disease.sh/v3/covid-19/all?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
+        axios.get(`${process.env.REACT_APP_COVID_API}/all?yesterday=${this.state.getStatsYesterday}&twoDaysAgo=false`)
             .then((res) => {
                 this.setState({
                     loading: false,

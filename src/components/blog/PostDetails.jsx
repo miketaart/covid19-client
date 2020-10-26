@@ -37,7 +37,7 @@ class PostDetails extends Component {
 
     deletePost = () => {
         let postId = this.props.match.params.id;
-        axios.delete(`https://my-acato-server.herokuapp.com/${postId}`)
+        axios.delete(`${process.env.REACT_APP_API_BASE}/data/${postId}`)
             .then(response => {
                 this.props.history.push('/')
             })
