@@ -25,25 +25,29 @@ Option 2 `Download this repo as a .zip file and extract locally`.
 
 2. Run `npm install`.
 
-3. Run `npm run dev` in the same folder to concurrently start the React app and the JSON-Server.
+3. Open your code editor and add two dotenv files to the main folder: .env.development & .env.production 
 
-4. Add two dotenv files to the main folder: .env.development & .env.production 
+4. In the .env.development file add: REACT_APP_API_BASE=http://localhost:5000 and REACT_APP_COVID_API=https://disease.sh/v3/covid-19
 
-5. In the .env.development file add: REACT_APP_API_BASE=http://localhost:5000 and REACT_APP_COVID_API=https://disease.sh/v3/covid-19
+5. In the .env.production file add: REACT_APP_API_BASE=https://my-acato-server.herokuapp.com and REACT_APP_COVID_API=https://disease.sh/v3/covid-19
 
-6. In the .env.production file add: REACT_APP_API_BASE=https://my-acato-server.herokuapp.com and REACT_APP_COVID_API=https://disease.sh/v3/covid-19
+6. Run `npm run dev` in the same folder to concurrently start the React app and the JSON-Server.
 
-7. I will remove step 5 to 7 after you checked my app :)
+7. I will remove step 4 to 7 after you checked my app :)
 
 
 ## Technologies and tools 
 
 HTML5 | CSS | Flexbox | JavaScript  | React (bootstrapped with [Create React App]) | JSON-Server (mock server --> https://github.com/typicode/json-server)
 
+### API
+For this project I used the disease.sh - Open Disease Data API for the dasboard data. The API uses data from the trustworthy John Hopkins University. Most important for me was that it's updated every hour of the day and above all there is no limit on the requests.
+For more info:
+- https://disease.sh/docs/
+- https://github.com/disease-sh/API
 
 ### Task 
-- **Develop a small SPA to demonstrate your level of skill, passion and view on today's world of web! Design & develop a page where a list of data (JSON) is displayed. As data, think of a list
-of to-do's, people, your hobbies or even perhaps something else you are most passionate about.**
+- **Develop a small SPA to demonstrate your level of skill, passion and view on today's world of web! Design & develop a page where a list of data (JSON) is displayed. As data, think of a list of to-do's, people, your hobbies or even perhaps something else you are most passionate about.**
 
 ### Solution
 - For this assessment I tried to come up with something that's useful and relevant nowadays. I decided to go with a Covid-19 dashboard combined with a small blog where people can share their Corona experience to help other people get through the situation. I started out with a lot of 'great' functionalities on paper but in the end I had to cut down the app and strip it down to a respectable MVP due to time constraint. The client functionalities meet the CRUD requirements specified in the assessment. I realise there is plenty of room for improvement but I hope this gives you an idea of my present skills. In our upcoming call I would like to elaborate a bit more on the improvements I realised during development but feel free to get in touch if you can't wait.
