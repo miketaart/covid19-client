@@ -27,6 +27,14 @@ Option 2 `Download this repo as a .zip file and extract locally`.
 
 3. Run `npm run dev` in the same folder to concurrently start the React app and the JSON-Server.
 
+4. Add two dotenv files to the main folder: .env.development & .env.production 
+
+5. In the .env.development file add: REACT_APP_API_BASE=http://localhost:5000
+
+6.In the .env.production file add: REACT_APP_API_BASE=https://my-acato-server.herokuapp.com
+
+7. I will remove step 5 to 7 after you checked my app :)
+
 
 ## Technologies and tools 
 
