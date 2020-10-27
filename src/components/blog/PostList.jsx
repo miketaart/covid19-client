@@ -75,9 +75,7 @@ export default class Blog extends Component {
                             <button onClick={this.sortByLatest} className="Blog__Sort-button">Sort by latest</button>
                             <button onClick={this.sortByEarliest} className="Blog__Sort-button">Sort by earliest</button>
                         </div>
-
                     </div>
-
                     <button className="Blog__Share-button">
                         <Link className="Blog__Add-link" to="/posts/survey">Add your experience</Link>
                     </button>
